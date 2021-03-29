@@ -1,0 +1,24 @@
+:root{
+    --primary-color: #84A9F3;
+    --secondary-color: #B069FF;
+}
+
+.header-top{
+    float:left;
+    background-color: white;
+    margin: 0;
+}
+
+.header a{
+
+}
+
+
+.logo{
+    width: 250px;
+    height: 100px;
+}
+
+.section{
+    display:block;
+}
