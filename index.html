@@ -15,57 +15,190 @@
 </head>
 
 <body>
-    <section class="top-header d-none d-lg-block">
-        <div class="container">
-            <div class="row">
-                <div class="row col-11">
-                    <div class="col">Seguimiento</div>
-                    <div class="col">Preguntas Frecuentes</div>
-                    <div class="col">Ubicacion</div>
-                    <div class="col">Contacto</div>
+    <div class="container">
+        <section class="top-header d-none d-lg-block">
+            <div class="d-flex">
+                <div class="lado-izq flex-grow-1">
+                    <div><span style="color:white;">La mejor tienda Geek del país </span>
+                    </div>
                 </div>
-                <div class="col-1">
-                    <a href="#" class="fa fa-facebook"></a>
-                    <a href="#" class="fa fa-instagram"></a>
-                    <a href="#" class="fa fa-whatsapp"></a>
+                <div class="lado-medio d-flex flex-grow-1 justify-content-end">
+                    <div><a href=""><span class=" material-icons">help</span>
+                            <span class="material-icons-text">Centro de ayuda</span></a>
+                    </div>
+                    <div><a href=""><span class=" material-icons">call</span>
+                            <span class="material-icons-text">+562 1337 2700</span></a>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </section>
+                <div class="lado-der d-flex flex-grow-2 justify-content-end">
 
+                    <div class="">
+                        <a href=" #" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-whatsapp"></a>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </section>
+    </div>
     <div class="container">
         <section class="main-header">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#"><img src="./img/logo-head.png" alt="logo" class="logo-img">Geek
-                        Nation</a>
+                <div class="container-fluid wena">
+                    <a class="navbar-brand" href="#">
+                        <div class="logo-container">
+                            <img src="./img/logo-head.png" alt="logo" class="logo-img">
+                            <h4 class="logo-text">
+                                <span class="logo-text-geek">Geek</span>
+                                <span class="logo-text-nation">Nation</span>
+                            </h4>
+                        </div>
+
+                    </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <form class="d-flex">
-                            <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="Busqueda..."
-                                    aria-label="Recipient's username" aria-describedby="button-addon2">
-                                <button class="btn btn-outline-secondary" type="button"
-                                    id="button-addon2">Buscar</button>
-                            </div>
-                        </form>
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Iniciar Sesion</a>
+
+
+                    <!-- Menu version movil -->
+                    <!-- Colocar usuario en version movil -->
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav w-100 mb-2 mb-lg-0">
+                            <li class="nav-item d-none d-lg-block busqueda-web">
+                                <form class="d-flex input-group w-auto d-lg">
+                                    <input type="search" class="form-control" placeholder="Busqueda..."
+                                        aria-label="Search" />
+                                    <button class="btn btn-outline-primary" type="button" data-mdb-ripple-color="dark">
+                                        <span class="material-icons search-icon">search
+                                        </span>
+                                    </button>
+                                </form>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Registrarse</a>
+                                <a class="nav-link" href="#"><span class="material-icons">person</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><span class="material-icons">shopping_cart</span></a>
+                            </li>
+                            <li class="nav-item d-none d-lg-block">
+                                <a class="nav-link" href="#"><span class="material-icons">remove_red_eye</span></a>
+                            </li>
+
+                            <!-- Categorias  version movil-->
+
+                            <li class="nav-item d-lg-none busqueda-movil">
+                                <form class="d-flex input-group w-auto d-lg">
+                                    <input type="search" class="form-control" placeholder="Busqueda..."
+                                        aria-label="Search" />
+                                    <button class="btn btn-outline-primary" type="button" data-mdb-ripple-color="dark">
+                                        <span class="material-icons search-icon">search
+                                        </span>
+                                    </button>
+                                </form>
+                            </li>
+
+                            <li class="nav-item dropdown d-lg-none">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Videojuegos
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown d-lg-none">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Comic/Manga
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown d-lg-none">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Coleccionables
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown d-lg-none">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Accesorios
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown d-lg-none">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Blu-Ray
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown d-lg-none">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Cd's Musicales
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- Resto del menu -->
+                            <li class="nav-item d-lg-none">
+                                <a class="nav-link" href="#">Centro de Ayuda</a>
                             </li>
                             <li class="nav-item d-lg-none">
-                                <div class="col">Ubicacion</div>
+                                <a class="nav-link" href="#">Contacto</a>
                             </li>
+
                             <li class="nav-item d-lg-none">
-                                <div class="col">Seguimiento</div>
+                                <a class="nav-link" href="#">Seguimiento de tu compra</a>
                             </li>
 
                         </ul>
@@ -75,8 +208,8 @@
             </nav>
         </section>
 
-        <section class="header-bottom">
-            <ul class="nav nav-pills nav-fill">
+        <section class="header-bottom d-none d-lg-block">
+            <ul class="nav nav-pills nav-fill menu-categorias">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
                         aria-expanded="false">Videojuegos</a>
@@ -160,31 +293,65 @@
 
 
         <section class="hero">
-            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="./img/FFVII.jpg" class="d-block w-100" alt="...">
+            <div class="d-flex justify-content-between hero-top-photos">
+                <div id="hero-top-left" class="carousel slide carousel-fade hero-carousel-left" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#hero-top-left" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#hero-top-left" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#hero-top-left" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
                     </div>
-                    <div class="carousel-item">
-                        <img src="./img/wp6222139.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./img-test/img-carousel/pexels-pixabay-163036 (2).jpg"
+                                class="hero-left-photo d-block" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img-test/img-carousel/pexels-pixabay-371924 (2).jpg"
+                                class="hero-left-photo d-block" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img-test/img-carousel/pexels-pixabay-163036 (2).jpg"
+                                class="hero-left-photo d-block" alt="...">
+                        </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="./img/YUGIOH.jpg" class="d-block w-100" alt="...">
-                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#hero-top-left"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#hero-top-left"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+
+                <img src="./img-test/img-carousel/pexels-mister-mister-4075410 (2).jpg"
+                    class="hero-right-photo d-none d-lg-block" alt="...">
             </div>
+
+            <div class="d-flex flex-wrap justify-content-between">
+                <img class="hero-bottom-photos" src="./img-test/img-chicas/1.jpg" alt="">
+
+                <img class="hero-bottom-photos" src="./img-test/img-chicas/1.jpg" alt="">
+
+                <img class="hero-bottom-photos" src="./img-test/img-chicas/1.jpg" alt="">
+
+                <img class="hero-bottom-photos" src="./img-test/img-chicas/1.jpg" alt="">
+
+
+            </div>
+
+
+
         </section>
 
+        <section class="test">
+
+        </section>
 
     </div>
 

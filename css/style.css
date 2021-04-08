@@ -1,17 +1,168 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 :root{
-    --primary-color: #84A9F3;
-    --secondary-color: #B069FF;
+    --primary-color: #38B6FF;
+    --secondary-color: #8D27FF;
     --third-color: #2e2e33;
     --fourth-color: #36393E
-}
+} 
 
 body{
     font-family: 'Poppins', sans-serif;
 }
 
+/*----------------- lOGO CSS -----------------*/
 
-.navbar-brand img{
-    height: 3vh;
+.logo-img{
+    height: 6vh;
 }
+
+.logo-container{
+    display: flex;
+    align-items: center;
+}
+
+.logo-text{
+    margin: 5px;
+}
+
+.logo-text-geek{
+    color: var(--primary-color); 
+}
+
+.logo-text-nation{
+    color: var(--secondary-color);
+}
+
+/*-----------------  MATERIAL ICONS CSS -----------------*/
+
+
+.material-icons, .material-icons-text {
+    vertical-align: middle;
+}
+
+.material-icons-text {
+    padding-left: 5px;
+}
+
+
+/*-----------------  TOP HEADER CSS -----------------*/
+.top-header{
+    background: var(--third-color);
+}
+
+.lado-izq{
+    padding-left: 15px;
+}
+
+.lado-medio{
+    margin-right: 15px;
+}
+
+.lado-medio a, .lado-der a{
+    padding-left: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.lado-der{
+    border-left: 2px solid white;
+    padding-right: 15px;
+}
+
+.eslogan{
+    color: white;
+    vertical-align: text-bottom;
+}
+
+
+/*-----------------  MAIN-HEADER CSS -----------------*/
+
+.busqueda-web{
+    flex:1;
+    margin-right: 20px;
+}
+
+.busqueda-movil{
+    padding-top: 5px;
+}
+
+.busqueda-movil button{
+    border: 1px solid var(--secondary-color);
+}
+
+.search-icon{
+    color: var(--secondary-color);
+}
+
+
+/*-----------------  HEADER-BOTTOM CSS -----------------*/
+
+.menu-categorias{
+    border-radius: 20px;
+    background: var(--secondary-color);
+
+}
+
+.menu-categorias a{
+    color: white;
+}
+
+
+/*-----------------  HERO CSS -----------------*/
+
+.hero{
+    padding-top: 24px;
+}
+
+.hero-bottom-photos{
+    width: 50%;
+}
+
+@media (min-width: 576px) {
+    .hero-bottom-photos{
+        width: 25%;
+    }
+} 
+
+@media (min-width: 1400px) {
+    .hero-bottom-photos{
+        width: 312px !important; /* 306px */
+    }
+} 
+
+.hero-top-photos{
+    margin-bottom: 16px;
+}
+
+
+.hero-left-photo{
+    width: 100%;
+}  
+
+@media (min-width: 992px) {
+    .hero-carousel-left{
+        width: 65%;
+    }
+    .hero-right-photo{
+        width: 35%;
+    }
+} 
+
+@media (min-width: 1400px) {
+    .hero-carousel-left{
+        width: 832px !important; /* 306px */
+    }
+    .hero-right-photo{
+        width: 448px !important; /* 306px */
+    }
+} 
+
+
+
+
+/*-----------------  CAROUSEL CSS -----------------*/
+
+/* carousel grande 853 altura 570*/
+
+/* chico 427  altura 570*/
