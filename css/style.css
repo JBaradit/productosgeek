@@ -36,7 +36,8 @@ body {
 
 
 /*-----------------  MATERIAL ICONS CSS -----------------*/
-.material-icons{
+
+.material-icons {
     font-size: 24px;
 }
 
@@ -81,8 +82,6 @@ body {
 }
 
 
-
-
 /*-----------------  MAIN-HEADER CSS -----------------*/
 
 .busqueda-web {
@@ -90,52 +89,50 @@ body {
     margin-right: 20px;
 }
 
-.busqueda-web button{
+.busqueda-web button {
     border: 1px solid var(--primary-color);
 }
-.busqueda-web .search-icon{
+
+.busqueda-web .search-icon {
     color: var(--primary-color);
 }
-.botones-end-menu{
+
+.botones-end-menu {
     display: flex;
     justify-content: space-around;
     flex: 3;
 }
 
-.borde-izquierdo-menu{
+.borde-izquierdo-menu {
     border-left: 3px dotted lightgray;
     padding-left: 20px;
 }
 
-.botones-end-menu .material-icons{
+.botones-end-menu .material-icons {
     font-size: 30px;
     color: var(--primary-color);
 }
 
-.botones-end-menu .material-icons-text{
+.botones-end-menu .material-icons-text {
     display: none;
     color: gray;
-}   
+}
 
-@media (min-width: 1200px) { 
-    .botones-end-menu .material-icons-text{
+@media (min-width: 1200px) {
+    .botones-end-menu .material-icons-text {
         display: inline-block;
-    } 
-    
+    }
     .busqueda-web {
         flex: 2;
         margin-right: 20px;
     }
-    
-    .botones-end-menu{
+    .botones-end-menu {
         flex: 2;
-    }      
-
-    .botones-end-menu{
+    }
+    .botones-end-menu {
         justify-content: space-between;
     }
-
-    .borde-izquierdo-menu{
+    .borde-izquierdo-menu {
         padding-left: 0px;
     }
 }
@@ -145,10 +142,9 @@ body {
         flex: 4;
         margin-right: 20px;
     }
-    
-    .botones-end-menu{
+    .botones-end-menu {
         flex: 3;
-    }    
+    }
 }
 
 .busqueda-movil {
@@ -159,19 +155,19 @@ body {
     border: 1px solid var(--primary-color);
 }
 
-.busqueda-movil .search-icon{
+.busqueda-movil .search-icon {
     color: var(--primary-color);
 }
 
-.top-menu-movil{
+.top-menu-movil {
     background-color: var(--third-color);
     border-radius: 5px;
 }
 
-.top-menu-movil .material-icons, .material-icons-text{
+.top-menu-movil .material-icons,
+.material-icons-text {
     color: white;
 }
-
 
 
 /*-----------------  HEADER-BOTTOM CSS -----------------*/
@@ -184,9 +180,10 @@ body {
     color: white;
 }
 
-.menu-categorias .dropdown-menu a{
-    color:gray;
+.menu-categorias .dropdown-menu a {
+    color: gray;
 }
+
 
 /*-----------------  HERO CSS -----------------*/
 
@@ -237,7 +234,14 @@ body {
     }
 }
 
+
 /*-----------------  MIDDLE -----------------*/
+
+
+/*imagenes-productos-masvendidos 312x400 px*/
+
+
+/*imagenes-productos-destacados 165 x 185 px*/
 
 .categoria {
     padding-top: 20px;
@@ -249,14 +253,6 @@ body {
 
 .card .vertical {
     height: 100%;
-}
-
-.card .img {
-    height: 55vh;
-}
-
-.card .img1 {
-    height: 25vh;
 }
 
 .categoria .img2 {
@@ -277,6 +273,7 @@ body {
 .btn-info {
     background-color: var(--secondary-color);
     border-color: var(--third-color);
+    color: #ffffff;
 }
 
 .btn-primary {
@@ -289,14 +286,20 @@ body {
 }
 
 .borde {
-    padding-left: 50px;
-    padding-bottom: 20px;
     margin-top: 10px;
     border: 1px solid #ced4da;
 }
 
-/*-----------------  FOOTER -----------------*/
+.card-body {
+    font-size: 14px;
+}
 
+.card-title {
+    font-size: 13px;
+}
+
+
+/*-----------------  FOOTER -----------------*/
 
 .footer {
     width: 100%;
