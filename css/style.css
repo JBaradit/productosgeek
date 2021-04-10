@@ -37,6 +37,10 @@ body {
 
 /*-----------------  MATERIAL ICONS CSS -----------------*/
 
+.material-icons {
+    font-size: 24px;
+}
+
 .material-icons,
 .material-icons-text {
     vertical-align: middle;
@@ -75,34 +79,100 @@ body {
 
 .eslogan {
     color: white;
-    vertical-align: text-bottom;
 }
 
 
 /*-----------------  MAIN-HEADER CSS -----------------*/
 
 .busqueda-web {
-    flex: 1;
+    flex: 4;
     margin-right: 20px;
 }
 
+.busqueda-web button {
+    border: 1px solid var(--primary-color);
+}
+
+.busqueda-web .search-icon {
+    color: var(--primary-color);
+}
+
+.botones-end-menu {
+    display: flex;
+    justify-content: space-around;
+    flex: 3;
+}
+
+.borde-izquierdo-menu {
+    border-left: 3px dotted lightgray;
+    padding-left: 20px;
+}
+
+.botones-end-menu .material-icons {
+    font-size: 30px;
+    color: var(--primary-color);
+}
+
+.botones-end-menu .material-icons-text {
+    display: none;
+    color: gray;
+}
+
+@media (min-width: 1200px) {
+    .botones-end-menu .material-icons-text {
+        display: inline-block;
+    }
+    .busqueda-web {
+        flex: 2;
+        margin-right: 20px;
+    }
+    .botones-end-menu {
+        flex: 2;
+    }
+    .botones-end-menu {
+        justify-content: space-between;
+    }
+    .borde-izquierdo-menu {
+        padding-left: 0px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .busqueda-web {
+        flex: 4;
+        margin-right: 20px;
+    }
+    .botones-end-menu {
+        flex: 3;
+    }
+}
+
 .busqueda-movil {
-    padding-top: 5px;
+    padding: 10px 0px 8px 0px;
 }
 
 .busqueda-movil button {
-    border: 1px solid var(--secondary-color);
+    border: 1px solid var(--primary-color);
 }
 
-.search-icon {
-    color: var(--secondary-color);
+.busqueda-movil .search-icon {
+    color: var(--primary-color);
+}
+
+.top-menu-movil {
+    background-color: var(--third-color);
+    border-radius: 5px;
+}
+
+.top-menu-movil .material-icons,
+.material-icons-text {
+    color: white;
 }
 
 
 /*-----------------  HEADER-BOTTOM CSS -----------------*/
 
 .menu-categorias {
-    border-radius: 20px;
     background: var(--secondary-color);
 }
 
@@ -110,11 +180,15 @@ body {
     color: white;
 }
 
+.menu-categorias .dropdown-menu a {
+    color: gray;
+}
+
 
 /*-----------------  HERO CSS -----------------*/
 
 .hero {
-    padding-top: 24px;
+    padding-top: 16px;
 }
 
 .hero-bottom-photos {
@@ -154,22 +228,11 @@ body {
 @media (min-width: 1400px) {
     .hero-carousel-left {
         width: 832px !important;
-        /* 306px */
     }
     .hero-right-photo {
         width: 448px !important;
-        /* 306px */
     }
 }
-
-
-/*-----------------  CAROUSEL CSS -----------------*/
-
-
-/* carousel grande 853 altura 570*/
-
-
-/* chico 427  altura 570*/
 
 
 /*-----------------  MIDDLE -----------------*/
@@ -232,5 +295,67 @@ body {
 }
 
 .card-title {
+    font-size: 13px;
+}
+
+
+/*-----------------  FOOTER -----------------*/
+
+.footer {
+    width: 100%;
+    position: relative;
+    height: auto;
+    background-color: 070617;
+}
+
+.footer .col {
+    width: 190px;
+    height: auto;
+    float: left;
+    justify-content: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 20px;
+}
+
+.footer .col h1 {
+    margin: 0;
+    padding: 20;
+    font-family: inherit;
+    font-size: 12px;
+    line-height: 17px;
+    padding: 20px 20px 5px 0px;
+    color: rgba(255, 255, 255, 0.2);
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.footer .col ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer .col ul li {
+    color: #999999;
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: bold;
+    padding: 2px 0px 5px 0px;
+    cursor: pointer;
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+}
+
+.footer .col ul li:hover {
+    color: #ffffff;
+    transition: .1s;
+    -wekbit-transition: .1s;
+    -moz-transition: .1s;
+}
+
+.footer .col ul li {
     font-size: 13px;
 }

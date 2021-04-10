@@ -10,6 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/bd9eab947e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -18,23 +19,25 @@
         <section class="top-header d-none d-lg-block">
             <div class="d-flex">
                 <div class="lado-izq flex-grow-1">
-                    <div><span style="color:white;">La mejor tienda Geek del país </span>
+                    <div><span class="eslogan">La mejor tienda Geek del país </span>
                     </div>
                 </div>
                 <div class="lado-medio d-flex flex-grow-1 justify-content-end">
-                    <div><a href=""><span class=" material-icons">help</span>
+                    <div><a href="ayuda.html"><span class=" material-icons">help</span>
                             <span class="material-icons-text">Centro de ayuda</span></a>
                     </div>
-                    <div><a href=""><span class=" material-icons">call</span>
+                    <div><a href="tel:+56213372700"><span class=" material-icons">call</span>
                             <span class="material-icons-text">+562 1337 2700</span></a>
                     </div>
                 </div>
                 <div class="lado-der d-flex flex-grow-2 justify-content-end">
 
                     <div class="">
-                        <a href=" #" class="fa fa-facebook"></a>
-                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+                        <a href="https://www.instagram.com" class="fa fa-instagram"></a>
                         <a href="#" class="fa fa-whatsapp"></a>
+                        <a href="https://discord.gg/XzR7fRqgqE" class="fab fa-discord"></a>
+
                     </div>
                 </div>
 
@@ -67,27 +70,71 @@
                     <!-- Colocar usuario en version movil -->
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
                         <ul class="navbar-nav w-100 mb-2 mb-lg-0">
-                            <li class="nav-item d-none d-lg-block busqueda-web">
-                                <form class="d-flex input-group w-auto d-lg">
-                                    <input type="search" class="form-control" placeholder="Busqueda..." aria-label="Search" />
-                                    <button class="btn btn-outline-primary" type="button" data-mdb-ripple-color="dark">
-                                        <span class="material-icons search-icon">search
-                                        </span>
-                                    </button>
-                                </form>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#"><span class="material-icons">person</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#"><span class="material-icons">shopping_cart</span></a>
-                            </li>
-                            <li class="nav-item d-none d-lg-block">
-                                <a class="nav-link" href="#"><span class="material-icons">remove_red_eye</span></a>
-                            </li>
+                            <div class="main-menu-web w-100 d-flex align-items-center">
+                                <li class="nav-item d-none d-lg-block busqueda-web">
+                                    <form class="d-flex input-group w-auto d-lg">
+                                        <input type="search" class="form-control" placeholder="Busqueda..." aria-label="Search" />
+                                        <button class="btn btn-outline-primary" type="button" data-mdb-ripple-color="dark">
+                                            <span class="material-icons search-icon">search
+                                            </span>
+                                        </button>
+                                    </form>
+                                </li>
+
+                                <div class="botones-end-menu d-flex align-items-center">
+                                    <li class="nav-item d-none d-lg-block ">
+                                        <a class="nav-link" href="https://www.starken.cl/seguimiento"><span
+                                                class="material-icons">local_shipping</span><span
+                                                class="material-icons-text">Seguimiento</a>
+                                    </li>
+                                    <li class="nav-item dropdown d-flex borde-izquierdo-menu  d-none d-lg-block">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <span class="material-icons">person</span> <span class="material-icons-text">Mi
+                                                cuenta</span>
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                            <li><a class="dropdown-item" href="#">Iniciar Sesión</a></li>
+                                            <li><a class="dropdown-item" href="#">Registrate</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="nav-item borde-izquierdo-menu  d-none d-lg-block">
+                                        <a class="nav-link" href="#"><span
+                                                class="material-icons">shopping_cart</span><span
+                                                class="material-icons-text">Carrito</a>
+                                    </li>
+                                </div>
+                            </div>
+
+
+
+
+
 
                             <!-- Categorias  version movil-->
+                            <div class="top-menu-movil d-flex justify-content-around">
+                                <a class="nav-link d-lg-none" href="https://www.starken.cl/seguimiento"><span
+                                        class="material-icons">local_shipping</span><span
+                                        class="material-icons-text">Seguimiento</a>
+
+                                <li class="nav-item dropdown d-lg-none">
+                                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><span class="material-icons">person</span> <span
+                                            class="material-icons-text">Mi
+                                            cuenta</span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Iniciar Sesión</a></li>
+                                        <li><a class="dropdown-item" href="#">Registrate</a></li>
+
+                                    </ul>
+                                </li>
+                                <li class="nav-item d-lg-none">
+                                    <a class="nav-link" href="#"><span class="material-icons">shopping_cart</span><span
+                                            class="material-icons-text">Carrito</a>
+                                </li>
+                            </div>
+
 
                             <li class="nav-item d-lg-none busqueda-movil">
                                 <form class="d-flex input-group w-auto d-lg">
@@ -104,12 +151,12 @@
                                     Videojuegos
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    <li><a class="dropdown-item" href="#">PS5</a></li>
+                                    <li><a class="dropdown-item" href="#">PS4</a></li>
+                                    <li><a class="dropdown-item" href="#">XBOX SERIES X/S</a></li>
+                                    <li><a class="dropdown-item" href="#">XBOX ONE</a></li>
+                                    <li><a class="dropdown-item" href="#">NINTENDO SWITCH</a></li>
+                                    <li><a class="dropdown-item" href="#">VER TODO</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown d-lg-none">
@@ -117,12 +164,13 @@
                                     Comic/Manga
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    <li><a class="dropdown-item" href="#">MARVEL</a></li>
+                                    <li><a class="dropdown-item" href="#">DC</a></li>
+                                    <li><a class="dropdown-item" href="#">OCCIDENTAL</a></li>
+                                    <li><a class="dropdown-item" href="#">MANGA</a></li>
+                                    <li><a class="dropdown-item" href="#">MANHWA</a></li>
+                                    <li><a class="dropdown-item" href="#">REVISTAS</a></li>
+                                    <li><a class="dropdown-item" href="#">VER TODO</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown d-lg-none">
@@ -130,12 +178,14 @@
                                     Coleccionables
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    <li><a class="dropdown-item" href="#">TCG</a></li>
+                                    <li><a class="dropdown-item" href="#">LEGO</a></li>
+                                    <li><a class="dropdown-item" href="#">ESTATUAS</a></li>
+                                    <li><a class="dropdown-item" href="#">POP</a></li>
+                                    <li><a class="dropdown-item" href="#">AMIIBOS</a></li>
+                                    <li><a class="dropdown-item" href="#">PELUCHES</a></li>
+                                    <li><a class="dropdown-item" href="#">NENDOROID</a></li>
+                                    <li><a class="dropdown-item" href="#">VER TODO</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown d-lg-none">
@@ -143,12 +193,15 @@
                                     Accesorios
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    <li><a class="dropdown-item" href="#">ROPA</a></li>
+                                    <li><a class="dropdown-item" href="#">BILLETERAS</a></li>
+                                    <li><a class="dropdown-item" href="#">LLAVEROS</a></li>
+                                    <li><a class="dropdown-item" href="#">AROS</a></li>
+                                    <li><a class="dropdown-item" href="#">ANILLOS</a></li>
+                                    <li><a class="dropdown-item" href="#">MOCHILAS</a></li>
+                                    <li><a class="dropdown-item" href="#">COSPLAY</a></li>
+                                    <li><a class="dropdown-item" href="#">VER TODO</a></li>
+
                                 </ul>
                             </li>
                             <li class="nav-item dropdown d-lg-none">
@@ -156,12 +209,10 @@
                                     Blu-Ray
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    <li><a class="dropdown-item" href="#">PELICULAS ANIMADAS</a></li>
+                                    <li><a class="dropdown-item" href="#">DRAMAS ORIENTALES</a></li>
+                                    <li><a class="dropdown-item" href="#">SERIES ANIMES</a></li>
+                                    <li><a class="dropdown-item" href="#">VER TODO</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown d-lg-none">
@@ -169,15 +220,14 @@
                                     Cd's Musicales
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    <li><a class="dropdown-item" href="#">KPOP</a></li>
+                                    <li><a class="dropdown-item" href="#">JAPON</a></li>
+                                    <li><a class="dropdown-item" href="#">SOUNDTRACKS POPULARES</a></li>
+                                    <li><a class="dropdown-item" href="#">VER TODO</a></li>
                                 </ul>
                             </li>
 
+                            <hr>
                             <!-- Resto del menu -->
                             <li class="nav-item d-lg-none">
                                 <a class="nav-link" href="#">Centro de Ayuda</a>
@@ -202,73 +252,69 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Videojuegos</a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        <li><a class="dropdown-item" href="#">PS5</a></li>
+                        <li><a class="dropdown-item" href="#">PS4</a></li>
+                        <li><a class="dropdown-item" href="#">XBOX SERIES X/S</a></li>
+                        <li><a class="dropdown-item" href="#">XBOX ONE</a></li>
+                        <li><a class="dropdown-item" href="#">NINTENDO SWITCH</a></li>
+                        <li><a class="dropdown-item" href="#">VER TODO</a></li>
+
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Comic/Manga</a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        <li><a class="dropdown-item" href="#">MARVEL</a></li>
+                        <li><a class="dropdown-item" href="#">DC</a></li>
+                        <li><a class="dropdown-item" href="#">OCCIDENTAL</a></li>
+                        <li><a class="dropdown-item" href="#">MANGA</a></li>
+                        <li><a class="dropdown-item" href="#">MANHWA</a></li>
+                        <li><a class="dropdown-item" href="#">REVISTAS</a></li>
+                        <li><a class="dropdown-item" href="#">VER TODO</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Coleccionables</a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        <li><a class="dropdown-item" href="#">TCG</a></li>
+                        <li><a class="dropdown-item" href="#">LEGO</a></li>
+                        <li><a class="dropdown-item" href="#">ESTATUAS</a></li>
+                        <li><a class="dropdown-item" href="#">POP</a></li>
+                        <li><a class="dropdown-item" href="#">AMIIBOS</a></li>
+                        <li><a class="dropdown-item" href="#">PELUCHES</a></li>
+                        <li><a class="dropdown-item" href="#">NENDOROID</a></li>
+                        <li><a class="dropdown-item" href="#">VER TODO</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Accesorios</a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        <li><a class="dropdown-item" href="#">ROPA</a></li>
+                        <li><a class="dropdown-item" href="#">BILLETERAS</a></li>
+                        <li><a class="dropdown-item" href="#">LLAVEROS</a></li>
+                        <li><a class="dropdown-item" href="#">AROS</a></li>
+                        <li><a class="dropdown-item" href="#">ANILLOS</a></li>
+                        <li><a class="dropdown-item" href="#">MOCHILAS</a></li>
+                        <li><a class="dropdown-item" href="#">COSPLAY</a></li>
+                        <li><a class="dropdown-item" href="#">VER TODO</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Blu-Ray</a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        <li><a class="dropdown-item" href="#">PELICULAS ANIMADAS</a></li>
+                        <li><a class="dropdown-item" href="#">DRAMAS ORIENTALES</a></li>
+                        <li><a class="dropdown-item" href="#">SERIES ANIMES</a></li>
+                        <li><a class="dropdown-item" href="#">VER TODO</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Cd's Musicales</a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        <li><a class="dropdown-item" href="#">KPOP</a></li>
+                        <li><a class="dropdown-item" href="#">JAPON</a></li>
+                        <li><a class="dropdown-item" href="#">SOUNDTRACKS POPULARES</a></li>
+                        <li><a class="dropdown-item" href="#">VER TODO</a></li>
                     </ul>
                 </li>
             </ul>
@@ -304,11 +350,11 @@
                     </button>
                 </div>
 
-                <img src="./img-test/img-carousel/pexels-mister-mister-4075410 (2).jpg" class="hero-right-photo d-none d-lg-block" alt="...">
+                <img src="./img-test/img-carousel/pexels-erik-mclean-5558236 (1).jpg" class="hero-right-photo d-none d-lg-block" alt="...">
             </div>
 
             <div class="d-flex flex-wrap justify-content-between">
-                <img class="hero-bottom-photos" src="./img-test/img-chicas/1.jpg" alt="">
+                <img class="hero-bottom-photos " src="./img-test/img-chicas/1.jpg" alt="">
 
                 <img class="hero-bottom-photos" src="./img-test/img-chicas/1.jpg" alt="">
 
@@ -593,16 +639,8 @@
                 </div>
             </div>
     </section>
-
-
-
-
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js " integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG " crossorigin="anonymous "></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js " integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
 
 </body>
 
