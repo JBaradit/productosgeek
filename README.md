@@ -7,3 +7,4 @@ El dia lunes nos fijamos que teniamos 3 decimas por todo lo que le hemos mostrad
 
 
 05/04: falta avanzar más en el proyecto
+10/04: bien chicos, revisen la rúbrica para que no les falte nada
