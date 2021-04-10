@@ -36,6 +36,9 @@ body {
 
 
 /*-----------------  MATERIAL ICONS CSS -----------------*/
+.material-icons{
+    font-size: 24px;
+}
 
 .material-icons,
 .material-icons-text {
@@ -75,34 +78,105 @@ body {
 
 .eslogan {
     color: white;
-    vertical-align: text-bottom;
 }
+
+
 
 
 /*-----------------  MAIN-HEADER CSS -----------------*/
 
 .busqueda-web {
-    flex: 1;
+    flex: 4;
     margin-right: 20px;
 }
 
+.busqueda-web button{
+    border: 1px solid var(--primary-color);
+}
+.busqueda-web .search-icon{
+    color: var(--primary-color);
+}
+.botones-end-menu{
+    display: flex;
+    justify-content: space-around;
+    flex: 3;
+}
+
+.borde-izquierdo-menu{
+    border-left: 3px dotted lightgray;
+    padding-left: 20px;
+}
+
+.botones-end-menu .material-icons{
+    font-size: 30px;
+    color: var(--primary-color);
+}
+
+.botones-end-menu .material-icons-text{
+    display: none;
+    color: gray;
+}   
+
+@media (min-width: 1200px) { 
+    .botones-end-menu .material-icons-text{
+        display: inline-block;
+    } 
+    
+    .busqueda-web {
+        flex: 2;
+        margin-right: 20px;
+    }
+    
+    .botones-end-menu{
+        flex: 2;
+    }      
+
+    .botones-end-menu{
+        justify-content: space-between;
+    }
+
+    .borde-izquierdo-menu{
+        padding-left: 0px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .busqueda-web {
+        flex: 4;
+        margin-right: 20px;
+    }
+    
+    .botones-end-menu{
+        flex: 3;
+    }    
+}
+
 .busqueda-movil {
-    padding-top: 5px;
+    padding: 10px 0px 8px 0px;
 }
 
 .busqueda-movil button {
-    border: 1px solid var(--secondary-color);
+    border: 1px solid var(--primary-color);
 }
 
-.search-icon {
-    color: var(--secondary-color);
+.busqueda-movil .search-icon{
+    color: var(--primary-color);
 }
+
+.top-menu-movil{
+    background-color: var(--third-color);
+    border-radius: 5px;
+}
+
+.top-menu-movil .material-icons, .material-icons-text{
+    color: white;
+}
+
 
 
 /*-----------------  HEADER-BOTTOM CSS -----------------*/
 
 .menu-categorias {
-    border-radius: 20px;
     background: var(--secondary-color);
 }
 
@@ -110,11 +184,14 @@ body {
     color: white;
 }
 
+.menu-categorias .dropdown-menu a{
+    color:gray;
+}
 
 /*-----------------  HERO CSS -----------------*/
 
 .hero {
-    padding-top: 24px;
+    padding-top: 16px;
 }
 
 .hero-bottom-photos {
@@ -154,23 +231,69 @@ body {
 @media (min-width: 1400px) {
     .hero-carousel-left {
         width: 832px !important;
-        /* 306px */
     }
     .hero-right-photo {
         width: 448px !important;
-        /* 306px */
     }
 }
 
+/*-----------------  MIDDLE -----------------*/
 
-/*-----------------  CAROUSEL CSS -----------------*/
+.categoria {
+    padding-top: 20px;
+}
 
+.card {
+    font-weight: bold;
+}
 
-/* carousel grande 853 altura 570*/
+.card .vertical {
+    height: 100%;
+}
 
+.card .img {
+    height: 55vh;
+}
 
-/* chico 427  altura 570*/
+.card .img1 {
+    height: 25vh;
+}
 
+.categoria .img2 {
+    height: 30vh;
+    width: 25vh;
+}
+
+.title1 {
+    padding-top: 35px;
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.title2 {
+    padding-top: 35px;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.btn-info {
+    background-color: var(--secondary-color);
+    border-color: var(--third-color);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--fourth-color);
+}
+
+.margen {
+    margin-top: 10px;
+}
+
+.borde {
+    padding-left: 50px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+    border: 1px solid #ced4da;
+}
 
 /*-----------------  MIDDLE -----------------*/
 
