@@ -295,63 +295,8 @@ body {
     border: 1px solid #ced4da;
 }
 
-/*-----------------  MIDDLE -----------------*/
+/*-----------------  FOOTER -----------------*/
 
-.categoria {
-    padding-top: 20px;
-}
-
-.card {
-    font-weight: bold;
-}
-
-.card .vertical {
-    height: 100%;
-}
-
-.card .img {
-    height: 55vh;
-}
-
-.card .img1 {
-    height: 25vh;
-}
-
-.categoria .img2 {
-    height: 30vh;
-    width: 25vh;
-}
-
-.title1 {
-    padding-top: 35px;
-    border-bottom: 2px solid var(--secondary-color);
-}
-
-.title2 {
-    padding-top: 35px;
-    border-bottom: 2px solid var(--primary-color);
-}
-
-.btn-info {
-    background-color: var(--secondary-color);
-    border-color: var(--third-color);
-}
-
-.btn-primary {
-    background-color: var(--primary-color);
-    border-color: var(--fourth-color);
-}
-
-.margen {
-    margin-top: 10px;
-}
-
-.borde {
-    padding-left: 50px;
-    padding-bottom: 20px;
-    margin-top: 10px;
-    border: 1px solid #ced4da;
-}
 
 .footer {
     width: 100%;
