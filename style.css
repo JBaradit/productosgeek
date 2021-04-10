@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 :root {
-    --primary-color: #38B6FF;
-    --secondary-color: #8D27FF;
+    --primary-color: #38b6ff;
+    --secondary-color: #8d29ff;
     --third-color: #2e2e33;
     --fourth-color: #36393E
 }
@@ -230,64 +230,47 @@ body {
     border: 1px solid #ced4da;
 }
 
-
-/*----------------- FOOTER CSS -----------------*/
-
-.footer {
-    width: 100%;
-    position: relative;
-    height: auto;
-    background-color: 070617;
+$primary-light-blue: #8DB9ED;
+$primary-line-color: #ccc;
+* {
+    box-sizing: border-box
 }
 
-.footer .col {
-    width: 190px;
-    height: auto;
-    float: left;
-    justify-content: center;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    padding: 20px;
+html,
+body {
+    height: 100%
 }
 
-.footer .col h1 {
-    margin: 0;
-    padding: 20;
-    font-family: inherit;
-    font-size: 12px;
-    line-height: 17px;
-    padding: 20px 20px 5px 0px;
-    color: rgba(255, 255, 255, 0.2);
-    font-weight: normal;
-    text-transform: uppercase;
-    letter-spacing: 3px;
+body {
+    font: 11px "Open Sans", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    //This justify-content is essentially unnecessary in Firefox and Chrome due to the flex: 1 1 auto on the main.  However, it's needed to push the footer down on IE11
+    justify-content: space-between
 }
 
-.footer .col ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+ul {
+    list-style: none
 }
 
-.footer .col ul li {
-    color: #999999;
-    font-size: 14px;
-    font-family: inherit;
-    font-weight: bold;
-    padding: 2px 0px 5px 0px;
-    cursor: pointer;
-    transition: .2s;
-    -webkit-transition: .2s;
-    -moz-transition: .2s;
+a {
+    text-decoration: none
 }
 
-.footer .col ul li:hover {
-    color: #ffffff;
-    transition: .1s;
-    -wekbit-transition: .1s;
-    -moz-transition: .1s;
+.generic-anchor {
+    color: $primary-light-blue;
+    &:visited {
+        color: $primary-light-blue
+    }
+    &:hover {
+        color: $primary-line-color
+    }
 }
 
-.footer .col ul li {
-    font-size: 13px;
+.flex-rw {
+    display: flex;
+    flex-flow: row wrap;
 }
