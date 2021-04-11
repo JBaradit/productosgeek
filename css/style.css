@@ -17,7 +17,7 @@ body {
     height: 6vh;
 }
 
-.logo-text {
+.logo-text{
     font-size: 0px;
 }
 
@@ -92,8 +92,6 @@ body {
 
 /*-----------------  MAIN-HEADER CSS -----------------*/
 
-.main-header {}
-
 .busqueda-web {
     flex: 4;
     margin-right: 20px;
@@ -165,13 +163,14 @@ body {
     border: 1px solid var(--primary-color);
 }
 
-.titulo-categorias {
+.titulo-categorias{
     font-weight: 600;
     margin-top: 8px;
     margin-bottom: 3px;
+
 }
 
-.hr-categorias {
+.hr-categorias{
     margin-top: 0px;
     border: 2px solid var(--secondary-color);
     margin-bottom: 8px;
@@ -182,36 +181,28 @@ body {
 }
 
 .top-menu-movil {
-    position: relative;
     margin-top: 5px;
     background-color: var(--third-color);
     border-radius: 5px;
 }
 
-.img-mario {
-    position: absolute;
-    width: 50%;
-    height: 25vh;
-    top: 145px;
-    left: 200px;
+.categorias-busqueda-movil{
+    display: flex;
+    width: 100%;
 }
 
-@media (min-width: 576px) {
-    .img-mario {
-        width: 50%;
-        height: 25vh;
-        top: 145px;
-        left: 200px;
-    }
+.busqueda-movil-der{
+    display: flex;
+    justify-content: center;
+    width: 55%;
 }
 
-@media (min-width: 768px) {
-    .img-mario {
-        width: 35%;
-        height: 25vh;
-        top: 145px;
-        left: 290px;
-    }
+.busqueda-movil-der img{
+    height: fit-content;
+}
+
+.busqueda-movil-izq{
+    width: 45%;
 }
 
 .top-menu-movil .material-icons,
@@ -266,7 +257,7 @@ body {
     width: 100%;
 }
 
-.hero-right-photo {
+.hero-right-photo{
     cursor: pointer;
 }
 
@@ -287,6 +278,7 @@ body {
         width: 448px !important;
     }
 }
+
 
 
 /*-----------------  MIDDLE -----------------*/
