@@ -194,7 +194,7 @@ body {
 .busqueda-movil-der{
     display: flex;
     justify-content: center;
-    width: 55%;
+    width: 45%;
     align-items: center;
 }
 
@@ -203,7 +203,7 @@ body {
 }
 
 .busqueda-movil-izq{
-    width: 45%;
+    width: 55%;
 }
 
 .top-menu-movil .material-icons,
