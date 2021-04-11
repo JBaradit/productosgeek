@@ -17,6 +17,10 @@ body {
     height: 6vh;
 }
 
+.logo-text{
+    font-size: 0px;
+}
+
 .logo-container {
     display: flex;
     align-items: center;
@@ -27,10 +31,14 @@ body {
 }
 
 .logo-text-geek {
+    font-weight: 600;
+    font-size: 1.5rem;
     color: var(--primary-color);
 }
 
 .logo-text-nation {
+    font-weight: 600;
+    font-size: 1.5rem;
     color: var(--secondary-color);
 }
 
@@ -83,6 +91,10 @@ body {
 
 
 /*-----------------  MAIN-HEADER CSS -----------------*/
+
+.main-header{
+    
+}
 
 .busqueda-web {
     flex: 4;
@@ -155,14 +167,56 @@ body {
     border: 1px solid var(--primary-color);
 }
 
+.titulo-categorias{
+    font-weight: 600;
+    margin-top: 8px;
+    margin-bottom: 3px;
+
+}
+
+.hr-categorias{
+    margin-top: 0px;
+    border: 2px solid var(--secondary-color);
+    margin-bottom: 8px;
+}
+
 .busqueda-movil .search-icon {
     color: var(--primary-color);
 }
 
 .top-menu-movil {
+    position: relative;
+    margin-top: 5px;
     background-color: var(--third-color);
     border-radius: 5px;
 }
+
+.img-mario{
+    position: absolute;
+    width: 50%;
+    height: 25vh;
+    top: 145px;
+    left: 200px;
+}
+
+@media (min-width: 576px) {
+    .img-mario {
+        width: 50%;
+        height: 25vh;
+        top: 145px;
+        left: 200px;
+    }
+}
+
+@media (min-width: 768px) {
+    .img-mario {
+        width: 35%;
+        height: 25vh;
+        top: 145px;
+        left: 290px;
+    }
+}
+
 
 .top-menu-movil .material-icons,
 .material-icons-text {
@@ -195,7 +249,7 @@ body {
     width: 50%;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 992px) {
     .hero-bottom-photos {
         width: 25%;
     }
@@ -214,6 +268,10 @@ body {
 
 .hero-left-photo {
     width: 100%;
+}
+
+.hero-right-photo{
+    cursor: pointer;
 }
 
 @media (min-width: 992px) {
