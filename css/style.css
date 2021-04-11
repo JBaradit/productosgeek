@@ -182,6 +182,8 @@ body {
 
 .top-menu-movil {
     margin-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
     background-color: var(--third-color);
     border-radius: 5px;
 }
@@ -210,7 +212,6 @@ body {
 .material-icons-text {
     color: white;
 }
-
 
 /*-----------------  HEADER-BOTTOM CSS -----------------*/
 
