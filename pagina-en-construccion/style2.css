@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+:root {
+    --primary-color: #38B6FF;
+    --secondary-color: #8D27FF;
+    --third-color: #2e2e33;
+    --fourth-color: #36393E
+}
+
+body {
+    background-color: #FFD200;
+}
+
+.img1 {
+    height: 58vh;
+    width: 83vh;
+    margin-top: 160px;
+}
+
+.progress {
+    width: 80%;
+}
+
+.logo {
+    width: 6vh;
+    height: 6vh;
+    color: #ffffff;
+}
+
+.geek {
+    color: var(--primary-color);
+}
+
+.nation {
+    color: var(--secondary-color)
+}
+
+.left-side {
+    padding: 50px;
+    margin-top: 140px;
+    font-weight: bold;
+    background-color: var(--fourth-color);
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.borde {
+    border: 1px solid #ffffff;
+}
+
+p {
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+hr {
+    margin-top: 0px;
+}
+
+.btn-primary,
+.progress-bar {
+    background-color: var(--primary-color);
+    font-weight: bold;
+    padding: 4px;
+    color: #000000;
+    border: 1px solid #000000 !important;
+}
+
+.progress,
+.form-control {
+    border: 1px solid #000000 !important;
+}
+
+.form-text {
+    color: #ffffff;
+}
+
+form {
+    width: 80%;
+}
+
+@media (max-width: 1200px) {
+    .img1 {
+        height: 50vh;
+        width: 80vh;
+        margin-top: 130px;
+    }
+    .left-side {
+        margin-top: 80px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 991px) {
+    .img1 {
+        height: 40vh;
+        width: 60vh;
+        margin-top: 165px;
+    }
+    .left-side {
+        width: 50%;
+        padding: 40px;
+        margin-top: 100px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 767px) {
+    .img1 {
+        height: 35vh;
+        width: 55vh;
+        margin-top: 100px;
+        margin-left: 120px;
+        margin-bottom: 0px;
+    }
+    .left-side {
+        margin-top: 10px;
+        width: 80%;
+        margin-left: 60px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 530px) {
+    .img1 {
+        height: 25vh;
+        width: 45vh;
+        margin-top: 100px;
+        margin-left: 120px;
+        margin-bottom: 0px;
+    }
+    .left-side {
+        margin-top: 10px;
+        width: 80%;
+        margin-left: 60px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 500px) {
+    .img1 {
+        height: 25vh;
+        width: 40h;
+        margin-top: 100px;
+        margin-left: 95px;
+        margin-bottom: 0px;
+    }
+    .left-side {
+        padding: 20px;
+        margin-top: 10px;
+        width: 70%;
+        margin-left: 70px;
+        font-size: 12px;
+    }
+}
