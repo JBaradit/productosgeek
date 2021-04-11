@@ -646,6 +646,19 @@ body {
     }
 }
 
+
+/*boton go up*/
+
+.go-up {
+    background-color: var(--fourth-color);
+    border-radius: 90%;
+    width: 5vh;
+    height: 5vh;
+    float: right;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
 .contenido-footer {
     background: var(--secondary-color);
     padding: 15px;
