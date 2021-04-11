@@ -637,3 +637,38 @@ body {
         height: 4vh;
     }
 }
+
+
+/*boton go up*/
+
+.go-up {
+    background-color: var(--fourth-color);
+    border-radius: 90%;
+    width: 5vh;
+    height: 5vh;
+    float: right;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.contenido-footer {
+    background: var(--secondary-color);
+    padding: 15px;
+}
+
+.footer-text {
+    padding: 25px;
+    padding-top: 0px;
+    text-align: center;
+}
+
+.footer-copyright {
+    padding: 10px;
+}
+
+.social-media-footer {
+    display: flex;
+    padding-top: 24px;
+    margin-bottom: 24px;
+    justify-content: center;
+}
