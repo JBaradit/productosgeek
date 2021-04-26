@@ -690,40 +690,44 @@ body {
 
 /* Formulario registro */
 
-.formulario-registro {
-    margin-top: 2em;
-    margin-bottom: 2em;
+
+.formulario-registro{
+    margin: 1em 0 !important;
     background: #9b7749;
-    background-image: url("/img-test/Héroe_de_Dragon_Quest_XI.png");
     box-shadow: 0 4px 10px rgba(0.9, 0.9, 0.9, 0.9);
     background-repeat: no-repeat;
+    background-size:contain;
+    background-position:left;
+    border-radius: 5px;
+    overflow: hidden;
+    max-width: 100%;
 }
 
-.formulario-registro-container {
+.formulario-registro-container{
     padding: 2em;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-.formulario-registro-left {
-    width: 50%;
+.formulario-registro-left{
+    display: none;
     display: flex;
     justify-content: center;
 }
 
-.formulario-registro-right {
+.formulario-registro-right{
     display: flex;
     justify-content: flex-end;
-    width: 50%;
+    width: 100% !important;
 }
 
-.container-formulario {
+.container-formulario{
     border: 5px solid var(--third-color);
     background-color: white;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.9);
-    width: 80%;
+    width: 100%;
 }
 
-.formulario-header {
+.formulario-header{
     vertical-align: center;
     background-color: var(--secondary-color);
     padding: 0.6em;
@@ -733,51 +737,126 @@ body {
     color: white;
 }
 
-.formulario-header h2 {
+.formulario-header h2{
     margin: 0;
 }
 
-.formulario-sociales {
+.formulario-sociales{
     display: flex;
     justify-content: space-between;
-    width: 50%;
+    width: 70%;
     margin: auto;
     padding: 2em 0;
 }
 
-.formulario-sociales a {
+.formulario-sociales a:hover{
+    background: linear-gradient(
+        45deg,
+        rgba(29, 236, 197, 0.5),
+        rgba(91, 14, 214, 0.5) 100%
+      );
     border: 2px solid var(--secondary-color);
 }
 
-.formulario-sociales i {
+.formulario-sociales a:hover i{
+    color: white;
+}
+
+
+.formulario-sociales a{
+    border: 2px solid var(--secondary-color);
+}
+
+.formulario-sociales i{
     font-size: 2rem;
     color: var(--primary-color)
 }
 
-.container-formulario .form {
+.container-formulario .form{
     padding: 2em 3em;
     padding-top: 0;
 }
 
-.container-formulario .form-control {
+.container-formulario .form-control{
     margin-bottom: 1.5em;
     position: relative;
     border: 0;
     padding: 0;
-    background-color: var(--primary-color);
+    margin-bottom: 2em;
+    background-color: var(--secondary-color);
+    padding-right: 0.5em;
 }
 
-.container-formulario .form-control input {
+.container-formulario .form-control input{
     box-sizing: border-box;
-    border: 3px solid var(--primary-color);
     border-radius: 6px;
     display: block;
     padding: 10px;
     font-size: 14px;
     width: 85%;
+    border: 3px solid var(--secondary-color);
 }
 
-.form button {
+.icono-input{
+    display: flex !important;
+    justify-content: center;
+    align-self: center;
+    width: 15%;
+    color: white;
+}
+
+.formulario-registro .form-control input:focus {
+	outline: 0;
+	border-color: var(--secondary-color);
+}
+
+.formulario-registro .form-control.success input {
+	border-color: #2ecc71;
+}
+
+.formulario-registro .form-control.error input {
+	border-color: #e74c3c;
+}
+
+.formulario-registro .form-check.success input {
+	border-color: #2ecc71;
+}
+
+.formulario-registro .form-check.error input{
+	border-color: #e74c3c;
+}
+
+.formulario-registro .hidden-icons {
+    position: absolute;
+	display: none;
+	top: 14px;
+	right: 20px;
+    color: #2ecc71;
+}
+
+.formulario-registro .form-control.success i.fa-check-circle {
+	color: #2ecc71;
+	display: flex;
+}
+
+.formulario-registro .form-control.error i.fa-exclamation-circle {
+	color: #e74c3c;
+	display: flex;
+}
+
+.formulario-registro .form-control small {
+	color: #e74c3c;
+	position: absolute;
+	top: 50px;
+	left: 0;
+	display: none;
+}
+
+.formulario-registro .form-control.error small {
+	display: inline;
+}
+
+.form button{
     background-color: var(--secondary-color);
     border-radius: 6px;
     border: solid var(--secondary-color);
@@ -788,19 +867,92 @@ body {
     font-size: 1.1rem;
 }
 
-.form-control i {
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    width: 15%;
-    color: white;
-}
-
-.container-formulario .form-check {
+.container-formulario .form-check{
     margin-bottom: 1em;
     font-size: 14px;
     font-weight: 600;
 }
+
+@media (max-width: 576px) {
+    .formulario-registro-left{
+        display: none;
+    }
+
+    .formulario-registro-right{
+        width: 100% !important;
+    }
+
+    .formulario-registro{
+        background-repeat: no-repeat;
+        background-size:contain;
+        background-position:center;
+    }
+    
+    .container-formulario{
+        border: 5px solid var(--third-color);
+        background-color: white;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.9);
+        width: 100%;
+    }
+    
+}
+
+@media (min-width: 768px) {
+    .formulario-sociales{
+        width: 50%;
+    } 
+}
+
+@media (min-width: 992px) {
+    .formulario-registro-left{
+        display: none;
+    }
+
+    .formulario-registro-right{
+        width: 100% !important;
+    }
+
+    .container-formulario{
+        width: 100%;
+    }
+
+    .formulario-sociales{
+        width: 40%;
+    }
+
+}
+
+@media (min-width: 1200px) {
+   
+    .formulario-registro-left{
+        display: none;
+    }
+
+    .formulario-registro-right{
+        width: 100% !important;
+    }
+
+    .container-formulario{
+        width: 50%;
+    }
+
+    .formulario-registro{
+        background-image: url("img-test/Héroe_de_Dragon_Quest_XI.png");
+        background-repeat: no-repeat;
+        background-size:contain;
+        background-position: -4.5em 0em;
+    }
+
+}
+
+@media (min-width: 1400px) {
+    .formulario-registro{
+        background-repeat: no-repeat;
+        background-size:contain;
+        background-position: -1.6em 0;
+    }
+}
+
 
 
 /* Formulario Contacto*/
