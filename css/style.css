@@ -937,7 +937,7 @@ body {
     }
 
     .formulario-registro{
-        background-image: url("https://JBaradit.github.io/productosgeek/img-test/Héroe_de_Dragon_Quest_XI.png");
+        background-image: url("../img-test/Héroe_de_Dragon_Quest_XI.png");
         background-repeat: no-repeat;
         background-size:contain;
         background-position: -4.5em 0em;
