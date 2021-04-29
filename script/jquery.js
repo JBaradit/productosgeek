@@ -61,30 +61,28 @@ $(document).ready(() => {
     });
 
 
+    var pass;
+    $('#password').blur(function (event) {
+        let contrasena = $('#password').val().trim()
 
-    function errorContrasena() {
-        var pass;
-        $('#password').blur(function (event) {
-            let contrasena = $('#password').val().trim()
+        if (contrasena.length == 0) {
+            $('.password-error').show();
+            $('.password-format').hide();
+        }
 
-            if (contrasena.length == 0) {
-                $('.password-error').show();
-                $('.password-format').hide();
-            }
+        else if (contrasena.length < 8) {
+            $('.password-error').hide();
+            $('.password-format').show();
+        }
 
-            else if (contrasena.length < 8) {
-                $('.password-error').hide();
-                $('.password-format').show();
-            }
+        else {
+            $('.password-format').hide();
+            $('.password-error').hide();
+            contrasena = pass
+            return pass;
+        }
+    });
 
-            else {
-                $('.password-format').hide();
-                $('.password-error').hide();
-                contrasena = pass
-                return pass;
-            }
-        });
-    }
 
     $('#password2').blur(function (event) {
         let contrasena2 = $('#password2').val().trim()
