@@ -667,3 +667,147 @@ body {
     margin-bottom: 24px;
     justify-content: center;
 }
+
+
+/* Formulario iniciar sesión */
+
+.formulario-registro-2 {
+    margin-top: 5em;
+    margin-bottom: 5em;
+    background: #ffc0cb;
+    background-image: url("/img/img-middle//LIGHTNING4.png");
+    box-shadow: 0 4px 10px rgba(0.9, 0.9, 0.9, 0.9);
+    background-repeat: no-repeat round;
+    position: relative;
+}
+
+.input-group form-control {
+    position: relative;
+}
+
+.formulario-2-registro-container {
+    padding: 2em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.formulario-2-registro-left {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.formulario-2-registro--right {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+.container-formulario-2 {
+    border: 5px solid var(--third-color);
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.9);
+    width: 75%;
+}
+
+.formulario-2-header {
+    vertical-align: center;
+    background-color: var(--secondary-color);
+    padding: 0.6em;
+    border-bottom: 1px solid #f0f0f0;
+    border: 5px solid var(--secondary-color);
+    text-align: center;
+    color: white;
+}
+
+.formulario-2-header h2 {
+    margin: 0;
+}
+
+.formulario-2-sociales {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: auto;
+    padding: 2em 0;
+}
+
+.formulario-2-sociales a {
+    border: 2px solid var(--secondary-color);
+}
+
+.formulario-2-sociales i {
+    font-size: 2rem;
+    color: var(--primary-color)
+}
+
+.container-formulario-2 .form {
+    padding: 2em 3em;
+    padding-top: 0;
+}
+
+.container-formulario-2 .form-control {
+    margin-bottom: 1.5em;
+    position: relative;
+    border: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+}
+
+.container-formulario-2 .form-control input {
+    box-sizing: border-box;
+    border: 3px solid var(--primary-color);
+    border-radius: 6px;
+    display: block;
+    padding: 10px;
+    font-size: 14px;
+    width: 85%;
+}
+
+.div.input-group.form-control {
+    line-height: 30px;
+    justify-content: space-between;
+}
+
+.form-check .form-2 button {
+    background-color: var(--secondary-color);
+    border-radius: 6px;
+    border: solid var(--secondary-color);
+    color: white;
+    display: inline-block;
+    width: 100%;
+    padding: 1em;
+    padding-top: 1em;
+    font-size: 1.1rem;
+    position: relative;
+}
+
+.form-2-control i {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 15%;
+    color: white;
+}
+
+.container-formulario .form-check {
+    margin-bottom: 50px !important;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+a {
+    color: var(--secondary-color);
+}
+
+
+/*errores formulario iniciar sesion*/
+
+.error,
+.email-valido,
+.errorClave,
+.errorVacio {
+    color: #ff0000;
+    font-size: small;
+    text-align: justify;
+    position: relative;
+}
