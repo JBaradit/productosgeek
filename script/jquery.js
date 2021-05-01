@@ -19,10 +19,10 @@ $(document).ready(() => {
     $('.username-correct').hide();
 
     /* VALIDACIÓN FORMULARIO CONTACTO */
-    $('#username').blur(function (event) {
+    $('#username').blur(function(event) {
 
         let nombre = $('#username').val().trim()
-        /* Ver campos vacios */
+            /* Ver campos vacios */
         if (nombre.length == 0) {
             $('.username-error').show();
             $('.username-length-error').hide();
@@ -41,20 +41,18 @@ $(document).ready(() => {
 
     });
 
-    $('#email').blur(function (event) {
+    $('#email').blur(function(event) {
         let correo = $('#email').val().trim()
 
         if (correo.length == 0) {
             $('.email-error').show();
             $('.email-format-error').hide();
             return;
-        }
-        else if (!emailValido(correo)) {
+        } else if (!emailValido(correo)) {
             $('.email-format-error').show();
             $('.email-error').hide();
             return;
-        }
-        else {
+        } else {
             $('.email-error').hide();
             $('.email-format-error').hide();
         }
@@ -64,20 +62,16 @@ $(document).ready(() => {
 
     function errorContrasena() {
         var pass;
-        $('#password').blur(function (event) {
+        $('#password').blur(function(event) {
             let contrasena = $('#password').val().trim()
 
             if (contrasena.length == 0) {
                 $('.password-error').show();
                 $('.password-format').hide();
-            }
-
-            else if (contrasena.length < 8) {
+            } else if (contrasena.length < 8) {
                 $('.password-error').hide();
                 $('.password-format').show();
-            }
-
-            else {
+            } else {
                 $('.password-format').hide();
                 $('.password-error').hide();
                 contrasena = pass
@@ -86,31 +80,28 @@ $(document).ready(() => {
         });
     }
 
-    $('#password2').blur(function (event) {
+    $('#password2').blur(function(event) {
         let contrasena2 = $('#password2').val().trim()
 
         if (contrasena2.length == 0) {
             $('.password2-error').show();
             $('.password-match-error').hide();
-        }
-        else if (contrasena2 != errorContrasena()) {
+        } else if (contrasena2 != errorContrasena()) {
             $('.password2-error').hide();
             $('.password-match-error').show();
-        }
-        else {
+        } else {
             $('.password2-error').hide();
             $('.password-match-error').hide();
         }
     });
 
 
-    $('#fr-checkbox').blur(function (event) {
+    $('#fr-checkbox').blur(function(event) {
         let checkbox = $('#fr-checkbox').is(":checked")
 
         if (checkbox.length > 0) {
             $('.terms-error').hide();
-        }
-        else {
+        } else {
             $('.terms-error').show();
         }
     })
@@ -119,7 +110,7 @@ $(document).ready(() => {
 
     /* VALIDACIÓN CONTACTO */
 
-    $('#usuario').blur(function (evento) {
+    $('#usuario').blur(function(evento) {
         let nombre = $('#usuario').val().trim()
 
         if (nombre.length == 0) {
@@ -135,7 +126,7 @@ $(document).ready(() => {
         }
 
     });
-    $('#telefono').blur(function (evento) {
+    $('#telefono').blur(function(evento) {
         let telefono = $('#telefono').val().trim()
 
         if (telefono.length == 0) {
@@ -160,7 +151,7 @@ $(document).ready(() => {
 
 
     });
-    $('#correo').blur(function (evento) {
+    $('#correo').blur(function(evento) {
         let correo = $('#correo').val().trim()
 
         if (correo.length < 1) {
@@ -178,7 +169,7 @@ $(document).ready(() => {
         }
     });
 
-    $('#msg').blur(function (evento) {
+    $('#msg').blur(function(evento) {
         let msg = $('#msg').val().trim()
 
         if (msg.length < 20) {
@@ -190,7 +181,7 @@ $(document).ready(() => {
 
     });
 
-    $('#motivo').blur(function (evento) {
+    $('#motivo').blur(function(evento) {
         let opcion = $('select option:selected').val();
 
         if (opcion != '0') {
@@ -201,7 +192,7 @@ $(document).ready(() => {
 
     });
 
-    $('#usuario1').blur(function (evento) {
+    $('#usuario1').blur(function(evento) {
         let nombre = $('#usuario1').val().trim()
 
         if (nombre.length == 0) {
@@ -219,7 +210,7 @@ $(document).ready(() => {
         }
 
     });
-    $('#telefono1').blur(function (evento) {
+    $('#telefono1').blur(function(evento) {
         let telefono = $('#telefono1').val().trim()
 
 
@@ -241,7 +232,7 @@ $(document).ready(() => {
             $('.telefono-valido').show();
         }
     });
-    $('#correo1').blur(function (evento) {
+    $('#correo1').blur(function(evento) {
         let correo = $('#correo1').val().trim()
 
         if (correo.length < 1) {
@@ -261,7 +252,7 @@ $(document).ready(() => {
 
     });
 
-    $('#msg1').blur(function (evento) {
+    $('#msg1').blur(function(evento) {
         let msg = $('#msg1').val().trim()
 
         if (msg.length < 20) {
@@ -273,7 +264,7 @@ $(document).ready(() => {
 
     });
 
-    $('#motivo1').blur(function (evento) {
+    $('#motivo1').blur(function(evento) {
         let opcion1 = $('select option:selected').val();
 
         if (opcion1 != '0') {
@@ -284,7 +275,180 @@ $(document).ready(() => {
 
     });
 
+    /*Validación de formulario*/
+
+    $('#formulario-contacto').submit(function(evento) {
+        evento.preventDefault();
+        let nombre = $('#usuario').val().trim();
+
+        if (nombre.length == 0) {
+            $('.error').show();
+            $('.error5').hide();
+        }
+        if (nombre.length < 3 && nombre.length > 0) {
+            $('.error').hide();
+            $('.error5').show();
+
+        } else {
+            $('.error5').hide();
+        }
+
+    });
+    $('#formulario-contacto').submit(function(evento) {
+        evento.preventDefault();
+        let telefono = $('#telefono').val().trim()
+
+        if (telefono.length == 0) {
+            $('.error2').show();
+            $('.telefono-valido').hide();
+            return;
+        } else if (telefono.length > 0 && telefono.length < 11) {
+            $('.error2').hide();
+            $('.telefono-valido').show();
+        } else if (telefono.length == 11) {
+            $('.error2').hide();
+            $('.telefono-valido').hide();
+        } else if (telefono.length > 11) {
+            $('.error2').hide();
+            $('.telefono-valido').show();
+        }
+
+
+
+
+    });
+    $('#formulario-contacto').submit(function(evento) {
+        evento.preventDefault();
+
+        let correo = $('#correo').val().trim()
+
+        if (correo.length < 1) {
+            $('.error1').show();
+            return;
+        } else {
+            $('.error1').hide();
+        }
+
+        if (!emailValido(correo) && (correo.length > 0)) {
+            $('.email-valido').show();
+            return;
+        } else {
+            $('.email-valido').hide();
+        }
+
+
+
+    });
+
+    $('#formulario-contacto').submit(function(evento) {
+        evento.preventDefault();
+        let msg = $('#msg').val().trim()
+
+        if (msg.length < 20) {
+            $('.error4').show();
+            return;
+        } else {
+            $('.error4').hide();
+        }
+
+    });
+
+    $('#formulario-contacto').submit(function(evento) {
+        evento.preventDefault();
+
+        let opcion = $('select option:selected').val();
+
+        if (opcion != '0') {
+            $('.error3').hide();
+        } else {
+            $('.error3').show();
+        }
+
+    });
+
+    /* Validación de formulario responsivo*/
+
+    $('#formulario-contacto1').submit(function(evento) {
+        evento.preventDefault();
+
+        let nombre = $('#usuario1').val().trim()
+
+        if (nombre.length == 0) {
+            $('.error').show();
+            $('.error5').hide();
+            return;
+        }
+        if (nombre.length < 3 && nombre.length > 0) {
+            $('.error').hide();
+            $('.error5').show();
+
+        } else {
+            $('.error').hide();
+            $('.error5').hide();
+        }
+
+    });
+    $('#formulario-contacto1').submit(function(evento) {
+        evento.preventDefault();
+        let telefono = $('#telefono1').val().trim()
+
+
+        if (telefono.length == 0) {
+            $('.error2').show();
+            $('.telefono-valido').hide();
+        } else if (telefono.length > 0 && (telefono.length < 11)) {
+            $('.error2').hide();
+            $('.telefono-valido').show();
+
+        } else if (telefono.length == 11) {
+            $('.error2').hide();
+            $('.telefono-valido').hide();
+        } else if (telefono.length > 11) {
+            $('.error2').hide();
+            $('.telefono-valido').show();
+        }
+    });
+    $('#formulario-contacto1').submit(function(evento) {
+        evento.preventDefault();
+
+        let correo = $('#correo1').val().trim()
+
+        if (correo.length < 1) {
+            $('.error1').show();
+            $('.email-valido').hide();
+            return;
+        } else {
+            $('.error1').hide();
+        }
+
+        if (!emailValido(correo) && (correo.length > 0)) {
+            $('.email-valido').show();
+
+            return;
+        } else {
+            $('.email-valido').hide();
+        }
+
+    });
+
+    $('#formulario-contacto1').submit(function(evento) {
+        evento.preventDefault();
+
+        let msg = $('#msg1').val().trim()
+
+        if (msg.length < 20) {
+            $('.error4').show();
+            return;
+        } else {
+            $('.error4').hide();
+        }
+
+    });
+
+
 });
+
+
 
 
 function emailValido(correo) {
@@ -292,5 +456,3 @@ function emailValido(correo) {
 
     return patron.test(correo);
 }
-
-
