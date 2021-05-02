@@ -15,102 +15,152 @@ $(document).ready(() => {
     $('.password-format').hide();
     $('.password2-error').hide();
     $('.password-match-error').hide();
-    $('.terms-error').hide();
-    $('.username-correct').hide();
+
 
     /* VALIDACIÓN FORMULARIO CONTACTO */
-    $('#username').blur(function(event) {
+
+    $('#username').blur(function (event) {
 
         let nombre = $('#username').val().trim()
-            /* Ver campos vacios */
+        /* Ver campos vacios */
         if (nombre.length == 0) {
             $('.username-error').show();
             $('.username-length-error').hide();
-
+            $('#username-error-icon').show();
+            $('#username-success-icon').hide();
+            $(this).css('border', 'solid 3px #e74c3c');
+            return;
         }
         /* Ver si tiene menos de 3 caracteres */
         else if (nombre.length < 3) {
             $('.username-error').hide();
             $('.username-length-error').show();
+            $('#username-error-icon').show();
+            $('#username-success-icon').hide();
+            $(this).css('border', 'solid 3px #e74c3c');
+            return;
 
         } else {
             $('.username-error').hide();
             $('.username-length-error').hide();
             $('.username-correct').show();
+            $('#username-error-icon').hide();
+            $('#username-success-icon').show();
+            $(this).css('border', 'solid 3px #2ecc71');
         }
 
     });
 
-    $('#email').blur(function(event) {
+    $('#email').blur(function (event) {
         let correo = $('#email').val().trim()
 
         if (correo.length == 0) {
             $('.email-error').show();
             $('.email-format-error').hide();
+            $('#email-error-icon').show();
+            $('#email-success-icon').hide();
+            $(this).css('border', 'solid 3px #e74c3c');
             return;
-        } else if (!emailValido(correo)) {
+        }
+        else if (!emailValido(correo)) {
             $('.email-format-error').show();
             $('.email-error').hide();
+            $('#email-error-icon').show();
+            $('#email-success-icon').hide();
+            $(this).css('border', 'solid 3px #e74c3c');
             return;
-        } else {
+
+        }
+        else {
             $('.email-error').hide();
             $('.email-format-error').hide();
+            $('#email-error-icon').hide();
+            $('#email-success-icon').show();
+            $(this).css('border', 'solid 3px #2ecc71');
         }
     });
 
 
-
-    function errorContrasena() {
-        var pass;
-        $('#password').blur(function(event) {
-            let contrasena = $('#password').val().trim()
-
-            if (contrasena.length == 0) {
-                $('.password-error').show();
-                $('.password-format').hide();
-            } else if (contrasena.length < 8) {
-                $('.password-error').hide();
-                $('.password-format').show();
-            } else {
-                $('.password-format').hide();
-                $('.password-error').hide();
-                contrasena = pass
-                return pass;
-            }
-        });
-    }
-
-    $('#password2').blur(function(event) {
+    $('#password').blur(function (event) {
+        let contrasena = $('#password').val().trim()
         let contrasena2 = $('#password2').val().trim()
+
+        if (contrasena != contrasena2 && contrasena2.length != 0) {
+            $('.password2-error').hide();
+            $('.password-match-error').show();
+            $('#password2-error-icon').show();
+            $('#password2-success-icon').hide();
+            $('#password2').css('border', 'solid 3px #e74c3c');
+        }
+        if (contrasena.length == 0) {
+            $('.password-error').show();
+            $('.password-format').hide();
+            $('#password-error-icon').show();
+            $('#password-success-icon').hide();
+            $(this).css('border', 'solid 3px #e74c3c');
+        }
+
+        else if (contrasena.length < 8) {
+            $('.password-error').hide();
+            $('.password-format').show();
+            $('#password-error-icon').show();
+            $('#password-success-icon').hide();
+            $(this).css('border', 'solid 3px #e74c3c');
+        }
+        else {
+            $('.password-format').hide();
+            $('.password-error').hide();
+            $('#password-error-icon').hide();
+            $('#password-success-icon').show();
+            $(this).css('border', 'solid 3px #2ecc71');
+            return pass;
+        }
+    });
+
+
+    $('#password2').blur(function (event) {
+        let contrasena2 = $('#password2').val().trim()
+        let contrasena = $('#password').val().trim()
+
 
         if (contrasena2.length == 0) {
             $('.password2-error').show();
             $('.password-match-error').hide();
-        } else if (contrasena2 != errorContrasena()) {
+            $('#password2-error-icon').show();
+            $('#password2-success-icon').hide();
+            $(this).css('border', 'solid 3px #e74c3c');
+        }
+        else if (contrasena2 != contrasena) {
             $('.password2-error').hide();
             $('.password-match-error').show();
-        } else {
+            $('#password2-error-icon').show();
+            $('#password2-success-icon').hide();
+            $(this).css('border', 'solid 3px #e74c3c');
+        }
+        else {
             $('.password2-error').hide();
             $('.password-match-error').hide();
+            $('#password2-error-icon').hide();
+            $('#password2-success-icon').show();
+            $(this).css('border', 'solid 3px #2ecc71');
         }
     });
 
 
-    $('#fr-checkbox').blur(function(event) {
-        let checkbox = $('#fr-checkbox').is(":checked")
+    $('#fr-checkbox').blur(function (event) {
 
-        if (checkbox.length > 0) {
-            $('.terms-error').hide();
-        } else {
-            $('.terms-error').show();
+        if ($('#fr-checkbox').is(':checked')) {
+            $('#terms-error').hide();
+        }
+        else {
+            $('#terms-error').show();
         }
     })
 
 
-
     /* VALIDACIÓN CONTACTO */
 
-    $('#usuario').blur(function(evento) {
+    $('#usuario').blur(function (evento) {
         let nombre = $('#usuario').val().trim()
 
         if (nombre.length == 0) {
@@ -126,7 +176,7 @@ $(document).ready(() => {
         }
 
     });
-    $('#telefono').blur(function(evento) {
+    $('#telefono').blur(function (evento) {
         let telefono = $('#telefono').val().trim()
 
         if (telefono.length == 0) {
@@ -151,7 +201,7 @@ $(document).ready(() => {
 
 
     });
-    $('#correo').blur(function(evento) {
+    $('#correo').blur(function (evento) {
         let correo = $('#correo').val().trim()
 
         if (correo.length < 1) {
@@ -169,7 +219,7 @@ $(document).ready(() => {
         }
     });
 
-    $('#msg').blur(function(evento) {
+    $('#msg').blur(function (evento) {
         let msg = $('#msg').val().trim()
 
         if (msg.length < 20) {
@@ -181,7 +231,7 @@ $(document).ready(() => {
 
     });
 
-    $('#motivo').blur(function(evento) {
+    $('#motivo').blur(function (evento) {
         let opcion = $('select option:selected').val();
 
         if (opcion != '0') {
@@ -192,7 +242,7 @@ $(document).ready(() => {
 
     });
 
-    $('#usuario1').blur(function(evento) {
+    $('#usuario1').blur(function (evento) {
         let nombre = $('#usuario1').val().trim()
 
         if (nombre.length == 0) {
@@ -210,7 +260,7 @@ $(document).ready(() => {
         }
 
     });
-    $('#telefono1').blur(function(evento) {
+    $('#telefono1').blur(function (evento) {
         let telefono = $('#telefono1').val().trim()
 
 
@@ -232,7 +282,7 @@ $(document).ready(() => {
             $('.telefono-valido').show();
         }
     });
-    $('#correo1').blur(function(evento) {
+    $('#correo1').blur(function (evento) {
         let correo = $('#correo1').val().trim()
 
         if (correo.length < 1) {
@@ -252,7 +302,7 @@ $(document).ready(() => {
 
     });
 
-    $('#msg1').blur(function(evento) {
+    $('#msg1').blur(function (evento) {
         let msg = $('#msg1').val().trim()
 
         if (msg.length < 20) {
@@ -264,7 +314,7 @@ $(document).ready(() => {
 
     });
 
-    $('#motivo1').blur(function(evento) {
+    $('#motivo1').blur(function (evento) {
         let opcion1 = $('select option:selected').val();
 
         if (opcion1 != '0') {
@@ -277,7 +327,7 @@ $(document).ready(() => {
 
     /*Validación de formulario*/
 
-    $('#formulario-contacto').submit(function(evento) {
+    $('#formulario-contacto').submit(function (evento) {
         evento.preventDefault();
         let nombre = $('#usuario').val().trim();
 
@@ -294,7 +344,7 @@ $(document).ready(() => {
         }
 
     });
-    $('#formulario-contacto').submit(function(evento) {
+    $('#formulario-contacto').submit(function (evento) {
         evento.preventDefault();
         let telefono = $('#telefono').val().trim()
 
@@ -317,7 +367,7 @@ $(document).ready(() => {
 
 
     });
-    $('#formulario-contacto').submit(function(evento) {
+    $('#formulario-contacto').submit(function (evento) {
         evento.preventDefault();
 
         let correo = $('#correo').val().trim()
@@ -340,7 +390,7 @@ $(document).ready(() => {
 
     });
 
-    $('#formulario-contacto').submit(function(evento) {
+    $('#formulario-contacto').submit(function (evento) {
         evento.preventDefault();
         let msg = $('#msg').val().trim()
 
@@ -353,7 +403,7 @@ $(document).ready(() => {
 
     });
 
-    $('#formulario-contacto').submit(function(evento) {
+    $('#formulario-contacto').submit(function (evento) {
         evento.preventDefault();
 
         let opcion = $('select option:selected').val();
@@ -368,7 +418,7 @@ $(document).ready(() => {
 
     /* Validación de formulario responsivo*/
 
-    $('#formulario-contacto1').submit(function(evento) {
+    $('#formulario-contacto1').submit(function (evento) {
         evento.preventDefault();
 
         let nombre = $('#usuario1').val().trim()
@@ -388,7 +438,7 @@ $(document).ready(() => {
         }
 
     });
-    $('#formulario-contacto1').submit(function(evento) {
+    $('#formulario-contacto1').submit(function (evento) {
         evento.preventDefault();
         let telefono = $('#telefono1').val().trim()
 
@@ -408,7 +458,7 @@ $(document).ready(() => {
             $('.telefono-valido').show();
         }
     });
-    $('#formulario-contacto1').submit(function(evento) {
+    $('#formulario-contacto1').submit(function (evento) {
         evento.preventDefault();
 
         let correo = $('#correo1').val().trim()
@@ -431,7 +481,7 @@ $(document).ready(() => {
 
     });
 
-    $('#formulario-contacto1').submit(function(evento) {
+    $('#formulario-contacto1').submit(function (evento) {
         evento.preventDefault();
 
         let msg = $('#msg1').val().trim()
