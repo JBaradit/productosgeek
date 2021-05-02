@@ -89,14 +89,14 @@ body {
     color: white;
 }
 
-
-.top-header-contact:hover{
+.top-header-contact:hover {
     color: var(--primary-color);
 }
 
-.top-header-redes:hover{
+.top-header-redes:hover {
     color: var(--secondary-color);
 }
+
 
 /*-----------------  MAIN-HEADER CSS -----------------*/
 
@@ -235,7 +235,7 @@ body {
     color: gray;
 }
 
-.menu-categorias .nav-item:hover{
+.menu-categorias .nav-item:hover {
     background-color: var(--primary-color);
 }
 
@@ -816,45 +816,26 @@ body {
     border-color: var(--secondary-color);
 }
 
-.formulario-registro .form-control.success input {
-    border-color: #2ecc71;
-}
-
-.formulario-registro .form-control.error input {
-    border-color: #e74c3c;
-}
-
-.formulario-registro .form-check.success input {
-    border-color: #2ecc71;
-}
-
-.formulario-registro .form-check.error input {
-    border-color: #e74c3c;
-}
-
 .formulario-registro .hidden-icons {
     position: absolute;
     display: none;
     top: 14px;
-    right: 20px;
-    color: #2ecc71;
+    right: 20px;   
 }
 
-.formulario-registro .form-control.success i.fa-check-circle {
-    color: #2ecc71;
-    display: flex;
-}
-
-.formulario-registro .form-control.error i.fa-exclamation-circle {
+.formulario-registro .fa-exclamation-circle{
     color: #e74c3c;
-    display: flex;
+}
+
+.formulario-registro .fa-check-circle{
+    color: #2ecc71;
 }
 
 .form button {
     background-color: var(--secondary-color);
     border-radius: 6px;
     border: solid var(--secondary-color);
-    color: white;
+    color: #fff;
     display: inline-block;
     width: 100%;
     padding: 1em;
@@ -862,10 +843,19 @@ body {
 }
 
 .container-formulario .form-check {
-    margin-bottom: 1em;
+    position: relative;
+    margin-bottom: 1.5em;
     font-size: 14px;
     font-weight: 600;
 }
+
+.container-formulario .terms-error{
+    position: absolute;
+    color: #e74c3c;
+    top: 20px;
+    font-size: 14px;
+}
+
 
 @media (max-width: 576px) {
     .formulario-registro-left {
@@ -881,33 +871,29 @@ body {
     }
     .container-formulario {
         border: 5px solid var(--third-color);
-        background-color: white;
+        background-color: #fff;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.9);
         width: 100%;
     }
-
-    .formulario-registro .form-control{
+    .formulario-registro .form-control {
         margin-bottom: 2.5em !important;
     }
-
-    .formulario-registro form{
+    .formulario-registro form {
         font-size: 12px !important;
     }
-
-    .formulario-registro label{
+    .formulario-registro label {
         font-size: 12px !important;
     }
-
-    .username-error, 
+    .username-error,
     .username-length-error,
     .email-error,
     .email-format-error,
     .password-error,
     .password-format,
     .password2-error,
-    .password-match-error{
-    font-size: 12px !important;
-}
+    .password-match-error {
+        font-size: 12px !important;
+    }
 }
 
 @media (min-width: 768px) {
@@ -960,7 +946,9 @@ body {
 
 /* Errores formulario */
 
-.username-error, 
+
+
+.username-error,
 .username-length-error,
 .email-error,
 .email-format-error,
@@ -970,75 +958,114 @@ body {
 .password-match-error{
     position: absolute;
     color: #e74c3c;
-    top: 50px; 
+    top: 50px;
     font-size: 14px;
-}
-
-.formulario-registro .form-check.error input {
-    border-color: #e74c3c;
 }
 
 
 /* Formulario Contacto*/
 
 .form-completo {
-    background-color: #7293A0;
+    background: linear-gradient( 45deg, rgba(29, 236, 197, 0.5), rgba(91, 14, 214, 0.5) 100%);
     margin-top: 20px;
 }
 
-.formulario {
-    background-color: #D8DDEF;
-    border: 3px solid var(--third-color);
-    border-radius: 5%;
+.form-completo2 {
+    background: linear-gradient( 45deg, rgba(29, 236, 197, 0.5), rgba(91, 14, 214, 0.5) 100%);
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.form-completo .form-group,
+.form-completo2 .form-group {
     padding: 20px;
+}
+
+.form-completo .formulario {
+    background-color: #ffffff;
+    border: 3px solid (var(--third-color));
     margin-top: 20px;
     margin-left: 70px;
     margin-bottom: 25px;
     max-width: 40%;
     max-height: 40%;
     box-shadow: 0 5px 10px rgb(0 0 0 / 90%);
+    padding: 0px;
 }
 
-.titulo {
+.form-completo .form-titulo,
+.form-completo2 .form-titulo {
     text-align: center;
-    color: var(--secondary-color);
+    padding: 1em;
+    color: #ffffff;
     font-weight: bold;
+    border-bottom: 1px solid #ffffff;
+    background-color: var(--secondary-color);
 }
 
-.estilo1 {
-    border: 3px solid var(--primary-color);
-    border-radius: 15px;
-    padding-left: 40px;
+.form-completo .form-control,
+.form-completo2 .form-control {
+    background-color: var(--primary-color);
+    border: 0;
+    padding-right: 0.5em;
+    margin-bottom: 2em;
+    width: 90%;
+    margin-left: 20px;
+}
+
+.form-completo2 .form-control {
+    width: 80%;
+    margin-left: 55px;
+}
+
+.estilo1,
+.estilo2 {
+    width: 90%;
+    padding-left: 10px;
+    display: absolute;
+    margin-left: 35px;
+    border: 0px solid white;
+}
+
+.estilo3 {
+    width: 100%;
+    color: #808080;
+    border: 0px solid white;
+}
+
+.comentary-form {
+    color: #ffffff;
 }
 
 .form-group .btn-primary {
     background-color: var(--secondary-color);
     padding: 15px;
     font-weight: bold;
+    display: absolute;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    width: 90%;
 }
 
-.estilo2 {
-    border-radius: 15px;
+.form-completo2 .form-group .btn-primary {
+    width: 80%;
+    margin-left: 55px;
 }
 
-.img-form {
+.form-completo .img-form {
     max-width: 100%;
-    margin-top: 40px;
+    margin-top: 70px;
     margin-left: 20px;
 }
 
 .iconos-formulario {
     position: absolute;
-    margin: 13px;
-    color: #000000;
+    margin: 5px;
+    color: #ffffff;
 }
 
-.estilo3 {
-    border: 3px solid var(--primary-color);
-    border-radius: 10px;
-}
-
-.img2-form {
+.form-completo2 .img2-form {
     width: 20%;
     height: 20%;
     margin-top: 20px;
@@ -1047,22 +1074,16 @@ body {
     margin-right: auto;
 }
 
-.formulario2 {
-    background-color: #D8DDEF;
+.form-completo2 .formulario2 {
+    background-color: #ffffff;
     border: 3px solid var(--third-color);
-    border-radius: 5%;
-    padding: 20px;
     margin-top: 20px;
     margin-bottom: 25px;
-    max-width: 100%;
-    box-shadow: 0 5px 10px rgb(0 0 0 / 90%);
-}
-
-.form-completo2 {
-    background-color: #7293A0;
-    margin-top: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    box-shadow: 0 5px 1 0px rgb(0 0 0 / 90%);
+    max-width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -1075,8 +1096,132 @@ body {
 .error4,
 .error5,
 .email-valido,
-.telefono-valido,
-.terms-error {
+.telefono-valido {
     color: #ff0000;
     font-size: small;
+    margin-left: 20px;
+}
+
+.error-form {
+    position: absolute;
+    top: 330px;
+}
+
+.error-form1 {
+    position: absolute;
+    top: 400px;
+}
+
+.error-form2 {
+    position: absolute;
+    top: 470px;
+}
+
+.error-form3 {
+    position: absolute;
+    top: 539px;
+}
+
+.error-form4 {
+    position: absolute;
+    top: 715px;
+}
+
+.error-form5 {
+    position: absolute;
+    top: 440px;
+    margin-left: 35px;
+}
+
+.error-form6 {
+    position: absolute;
+    top: 510px;
+    margin-left: 35px;
+}
+
+.error-form7 {
+    position: absolute;
+    top: 580px;
+    margin-left: 35px;
+}
+
+.error-form8 {
+    position: absolute;
+    top: 650px;
+    margin-left: 35px;
+}
+
+.error-form9 {
+    position: absolute;
+    top: 825px;
+    margin-left: 35px;
+}
+
+@media (max-width: 767px) {
+    .form-completo2 .form-control,
+    .form-completo2 .form-group .btn-primary {
+        margin-left: 25px;
+    }
+    .error-form5 {
+        position: absolute;
+        top: 400px;
+        margin-left: 20px;
+    }
+    .error-form6 {
+        position: absolute;
+        top: 470px;
+        margin-left: 20px;
+    }
+    .error-form7 {
+        position: absolute;
+        top: 540px;
+        margin-left: 20px;
+    }
+    .error-form8 {
+        position: absolute;
+        top: 608px;
+        margin-left: 20px;
+    }
+    .error-form9 {
+        position: absolute;
+        top: 785px;
+        margin-left: 8px;
+    }
+}
+
+@media (max-width: 576px) {
+    .form-completo2 .form-control,
+    .form-completo2 .form-group .btn-primary {
+        margin-left: 30px;
+    }
+    .error-form5 {
+        position: absolute;
+        top: 390px;
+        margin-left: 10px;
+    }
+    .error-form6 {
+        position: absolute;
+        top: 460px;
+        margin-left: 10px;
+    }
+    .error-form7 {
+        position: absolute;
+        top: 530px;
+        margin-left: 10px;
+    }
+    .error-form8 {
+        position: absolute;
+        top: 600px;
+        margin-left: 10px;
+    }
+    .error-form9 {
+        position: absolute;
+        top: 772px;
+        margin-left: 13px;
+    }
+    .error4,
+    .telefono-valido,
+    .email-valido {
+        font-size: 10px;
+    }
 }

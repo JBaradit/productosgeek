@@ -363,36 +363,36 @@
                             <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/login"
                                 role="button"><i class="fab fa-twitter"></i></a>
                         </div>
-                        <form id="form" action="form" class="form" method="POST">
+                        <form id="formulario-registro" action="form" class="form" method="POST">
                             <div class="input-group form-control">
                                 <i class="fas fa-user icono-input"></i>
                                 <input type="text" placeholder="Ingrese su nombre" id="username">
-                                <i class="fas fa-check-circle hidden-icons"></i>
-                                <i class="fas fa-exclamation-circle hidden-icons"></i>
+                                <i id="username-success-icon" class="fas fa-check-circle hidden-icons"></i>
+                                <i id="username-error-icon" class="fas fa-exclamation-circle hidden-icons"></i>
                                 <span class="username-error">Debes ingresar tu nombre</span>
                                 <span class="username-length-error">El nombre debe tener mínimo 3 carácteres</span>
                             </div>
                             <div class="input-group form-control">
                                 <i class="fas fa-envelope icono-input"></i>
                                 <input type="text" placeholder="Ingrese su correo" id="email">
-                                <i class="fas fa-check-circle hidden-icons"></i>
-                                <i class="fas fa-exclamation-circle hidden-icons"></i>
+                                <i id="email-success-icon" class="fas fa-check-circle hidden-icons"></i>
+                                <i id="email-error-icon" class="fas fa-exclamation-circle hidden-icons"></i>
                                 <span class="email-error">Debes ingresar un email</span>
                                 <span class="email-format-error">Introduce una dirección de correo valida</span>
                             </div>
                             <div class="input-group form-control">
                                 <i class="fas fa-lock icono-input"></i>
                                 <input type="password" placeholder="Contraseña" id="password">
-                                <i class="fas fa-check-circle hidden hidden-icons"></i>
-                                <i class="fas fa-exclamation-circle hidden-icons"></i>
+                                <i id="password-success-icon" class="fas fa-check-circle hidden-icons"></i>
+                                <i id="password-error-icon" class="fas fa-exclamation-circle hidden-icons"></i>
                                 <span class="password-error">Debes ingresar una contraseña</span>
                                 <span class="password-format">La contraseña debe tener mínimo 8 caracteres</span>
                             </div>
                             <div class="input-group form-control">
                                 <i class="fas fa-lock icono-input"></i>
                                 <input type="password" placeholder="Confirmar contraseña" id="password2">
-                                <i class="fas fa-check-circle  hidden-icons"></i>
-                                <i class="fas fa-exclamation-circle hidden-icons"></i>
+                                <i id="password2-success-icon" class="fas fa-check-circle hidden-icons"></i>
+                                <i id="password2-error-icon" class="fas fa-exclamation-circle hidden-icons"></i>
                                 <span class="password2-error">Debes confirmar tu contraseña</span>
                                 <span class="password-match-error">Las contraseñas no coindicen</span>
                             </div>
@@ -401,10 +401,11 @@
                                 <label class="form-check-label" for="exampleCheck1">Estoy de acuerdo con los terminos y
                                     condiciones</label>
                                 <br>
-                                <!-- <span class="terms-error">Debes aceptar los terminos y condiciones</span> -->
+                                <span id="terms-error" class="terms-error">Debes aceptar los terminos y
+                                    condiciones</span>
 
                             </div>
-                            <button>Registrarse</button>
+                            <button type="submit">Registrarse</button>
                         </form>
                     </div>
                 </div>

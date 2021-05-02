@@ -50,7 +50,7 @@
         <section class="main-header">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container">
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="index.html">
                         <div class="logo-container">
                             <img src="./img/logo-head.png" alt="logo" class="logo-img">
                             <h4 class="logo-text">
@@ -95,7 +95,7 @@
                                         </a>
                                         <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
                                             <li><a class="dropdown-item" href="#">Iniciar Sesión</a></li>
-                                            <li><a class="dropdown-item" href="#">Registrate</a></li>
+                                            <li><a class="dropdown-item" href="registrousuario.html">Registrate</a></li>
                                         </ul>
                                     </li>
 
@@ -329,96 +329,126 @@
                     <img class="img-form" src="img-formulario/klipartz.com.png" alt="sonic">
                 </div>
                 <div class="col-6 formulario">
-                    <form action="#" method="POST">
-                        <legend class="titulo">Contáctanos</legend>
-                        <br>
+                    <form action="#" method="POST" id="formulario-contacto">
+                        <div class="form-titulo">
+                            <legend>Contáctanos</legend>
+                            <br>
+                        </div>
                         <br>
                         <div class="form-group">
-                            <i class="fas fa-user iconos-formulario"></i>
-                            <input type="text" class="form-control estilo1" placeholder="Ingrese su nombre" id="usuario">
-                            <span class="error">El campo nombre debe ser rellenado</span>
-                            <span class="error5">El nombre debe tener mínimo 3 carácteres</span>
-                            <br>
-                            <i class="fas fa-envelope iconos-formulario"></i>
-                            <input type="text" class="form-control estilo1" placeholder="Ingrese su correo" id="correo">
-                            <span class="error1">El campo de email debe ser rellenado</span>
-                            <span class="email-valido">El formato de email debe ser xxxx@dominio.com</span>
-                            <br>
-                            <i class="fas fa-phone iconos-formulario"></i>
-                            <input type="text" class="form-control estilo1" placeholder="Ingrese su teléfono" id="telefono">
-                            <span class="error2">El campo de teléfono debe ser rellenado</span>
-                            <span class="telefono-valido">El campo télefono debe tener el formato 569xxxxxxxx</span>
-                            <br>
-                            <select id="motivo" class="form-control estilo3">
-                            <option value="0">--Seleccione motivo de contacto--</option>
-                            <option value="1">Devoluciones</option>
-                            <option value="2">Servicio al cliente</option>
-                            <option value="3">Consultas</option>
-                        </select>
-                            <span class="error3">Debe elegir motivo de contacto</span>
-                            <br>
-                            <label for="msg">Comentarios</label>
-                            <textarea class="form-control estilo3" name="mensaje" id="msg" cols="48" rows="4"></textarea>
-                            <span class="error4">El campo comentarios debe tener al menos 20 carácteres</span>
-                            <br>
-
-                            <button type="button" class="form-control btn btn-primary estilo2">Enviar</button>
+                            <div class="form-control">
+                                <i class="fas fa-user iconos-formulario"></i>
+                                <input type="text" class="estilo1" placeholder="Ingrese su nombre" id="usuario">
+                            </div>
+                            <div class="error-form">
+                                <span class="error">El campo nombre debe ser rellenado</span>
+                                <span class="error5">El nombre debe tener mínimo 3 carácteres</span>
+                            </div>
+                            <div class="form-control">
+                                <i class="fas fa-envelope iconos-formulario "></i>
+                                <input type="text " class="estilo1 " placeholder="Ingrese su correo " id="correo">
+                            </div>
+                            <div class="error-form1">
+                                <span class="error1 ">El campo de email debe ser rellenado</span>
+                                <span class="email-valido ">El formato de email debe ser xxxx@dominio.com</span>
+                            </div>
+                            <div class="form-control">
+                                <i class="fas fa-phone iconos-formulario"></i>
+                                <input type="text " class="estilo1 " placeholder="Ingrese su teléfono " id="telefono">
+                            </div>
+                            <div class="error-form2">
+                                <span class="error2 ">El campo de teléfono debe ser rellenado</span>
+                                <span class="telefono-valido ">El campo télefono debe tener el formato 569xxxxxxxx</span>
+                            </div>
+                            <div class="form-control">
+                                <select id="motivo" class="estilo3">
+                                <option value="0">--Seleccione motivo de contacto--</option>
+                                <option value="1">Devoluciones</option>
+                                <option value="2">Servicio al cliente</option>
+                                <option value="3">Consultas</option>
+                            </select>
+                            </div>
+                            <div class="error-form3">
+                                <span class="error3">Debe elegir motivo de contacto</span>
+                            </div>
+                            <div class="form-control">
+                                <label class="comentary-form" for="msg">Comentarios</label>
+                                <textarea class="estilo3" name="mensaje " id="msg" cols="48 " rows="4 "></textarea>
+                            </div>
+                            <div class="error-form4">
+                                <span class="error4">El comentario debe tener al menos 20 carácteres</span>
+                            </div>
+                            <button type="submit" class="form-control btn btn-primary estilo2 ">Enviar</button>
                         </div>
                 </div>
             </div>
             </form>
         </section>
     </div>
-    <section class="form-completo2 d-lg-none">
-        <div class="container d-lg-none">
-            <img class="img2-form" src="img-formulario/klipartz.com.png" alt="sonic">
-        </div>
-        <div class="container d-lg-none">
-            <section class="formulario2">
-                <form action="#" method="POST">
-                    <legend class="titulo">Contáctanos</legend>
-                    <br>
+    <div class="container d-lg-none">
+        <section class="form-completo2">
+            <img class="img2-form" src="img-formulario/klipartz.com.png " alt="sonic">
+            <div class="formulario2 ">
+                <form action="#" method="POST" id="formulario-contacto1">
+                    <div class="form-titulo">
+                        <legend>Contáctanos</legend>
+                        <br>
+                    </div>
                     <br>
                     <div class="form-group">
-                        <i class="fas fa-user iconos-formulario"></i>
-                        <input type="text" class="form-control estilo1" placeholder="Ingrese su nombre" id="usuario1">
-                        <span class="error">El campo nombre debe ser rellenado</span>
-                        <span class="error5">El nombre debe tener mínimo 3 carácteres</span>
-                        <br>
-                        <i class="fas fa-envelope iconos-formulario"></i>
-                        <input type="text" class="form-control estilo1" placeholder="Ingrese su correo" id="correo1">
-                        <span class="error1">El campo de email debe ser rellenado</span>
-                        <span class="email-valido">El formato de email debe ser xxxx@gmail.com</span>
-                        <br>
-                        <i class="fas fa-phone iconos-formulario"></i>
-                        <input type="text" class="form-control estilo1" placeholder="Ingrese su teléfono" id="telefono1">
-                        <span class="error2">El campo de teléfono debe ser rellenado</span>
-                        <span class="telefono-valido">El campo télefono debe tener el formato 569xxxxxxxx</span>
-                        <br>
-                        <select id="motivo1" class="form-control estilo3">
+                        <div class="form-control">
+                            <i class="fas fa-user iconos-formulario"></i>
+                            <input type="text " class="estilo1" placeholder="Ingrese su nombre" id="usuario1">
+                        </div>
+                        <div class="error-form5">
+                            <span class="error">El campo nombre debe ser rellenado</span>
+                            <span class="error5">El nombre debe tener mínimo 3 carácteres</span>
+                        </div>
+                        <div class="form-control">
+                            <i class="fas fa-envelope iconos-formulario "></i>
+                            <input type="text" class="estilo1" placeholder="Ingrese su correo" id="correo1">
+                        </div>
+                        <div class="error-form6">
+                            <span class="error1">El campo de email debe ser rellenado</span>
+                            <span class="email-valido">El formato de email debe ser xxxx@dominio.com</span>
+                        </div>
+                        <div class="form-control">
+                            <i class="fas fa-phone iconos-formulario "></i>
+                            <input type="text " class="estilo1" placeholder="Ingrese su teléfono " id="telefono1">
+                        </div>
+                        <div class="error-form7">
+                            <span class="error2">El campo de teléfono debe ser rellenado</span>
+                            <span class="telefono-valido">El campo télefono debe tener el formato 569xxxxxxxx</span>
+                        </div>
+                        <div class="form-control">
+                            <select id="motivo" class=" estilo3 ">
                             <option value="0">--Seleccione motivo de contacto--</option>
                             <option value="1">Devoluciones</option>
                             <option value="2">Servicio al cliente</option>
                             <option value="3">Consultas</option>
                         </select>
-                        <span class="error3">Debe elegir motivo de contacto</span>
-                        <br>
-                        <label for="msg">Comentarios</label>
-                        <textarea class="form-control estilo3" name="mensaje" id="msg1" cols="48" rows="4"></textarea>
-                        <span class="error4">El campo comentarios debe tener al menos 20 carácteres</span>
-                        <br>
-                        <button type="button" class="form-control btn btn-primary estilo2">Enviar</button>
+                        </div>
+                        <div class="error-form8">
+                            <span class="error3">Debe elegir motivo de contacto</span>
+                        </div>
+                        <div class="form-control">
+                            <label class="comentary-form" for="msg">Comentarios</label>
+                            <textarea class="estilo3" name="mensaje " id="msg1" cols="48 " rows="4 "></textarea>
+                        </div>
+                        <div class="error-form9">
+                            <span class="error4">El comentario debe tener al menos 20 carácteres</span>
+                        </div>
+                        <button type="submit" class="form-control btn btn-primary estilo2">Enviar</button>
                     </div>
-        </div>
-        </form>
+                </form>
+            </div>
         </section>
-    </section>
+    </div>
 
     <!-- FOOTER -->
 
-    <section class="footer-final text-white text-center text-md-start">
-        <div class="container p-0 contenido-footer">
-
+    <div class="container">
+        <section class="footer-final contenido-footer text-white text-center text-md-start">
             <div class="social-media-footer">
                 <!-- Facebook -->
                 <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com" role="button"><i
@@ -503,10 +533,15 @@
                 </div>
 
             </div>
-            <div class="text-center footer-copyright">
-                © 2021 Cracks Engineers S.A - Todos los derechos reservados
-            </div>
+
+        </section>
+        <div class="text-center footer-copyright m-0 text-white">
+            © 2021 Cracks Engineers S.A - Todos los derechos reservados
         </div>
+    </div>
+
+    <a href="#start-page" class="go-up-button"><span class="material-icons">arrow_upward</span></a>
+
     </section>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src=" https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js " integrity=" sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG " crossorigin=" anonymous "></script>
