@@ -15,6 +15,7 @@ $(document).ready(() => {
     $('.password-format').hide();
     $('.password2-error').hide();
     $('.password-match-error').hide();
+    $('.terms-error').hide();
 
 
     /* VALIDACIÓN FORMULARIO CONTACTO */
