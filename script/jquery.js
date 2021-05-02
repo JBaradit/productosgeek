@@ -114,7 +114,16 @@ $(document).ready(() => {
             $('#password-error-icon').hide();
             $('#password-success-icon').show();
             $(this).css('border', 'solid 3px #2ecc71');
-            return pass;
+
+            if (contrasena == contrasena2) {
+                $('.password-error').hide();
+                $('.password-format').hide();
+                $('#password-error-icon').hide();
+                $('#password-success-icon').show();
+                $('#password2-success-icon').show();
+                $(this).css('border', 'solid 3px #2ecc71');
+                $('#contrasena2').css('border', 'solid 3px #2ecc71');
+            }
         }
     });
 
