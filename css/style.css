@@ -8,6 +8,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    
 }
 
 
@@ -651,10 +652,6 @@ body {
     }
 }
 
-.footer-final {
-    margin-top: 25px;
-}
-
 .contenido-footer {
     background: var(--secondary-color);
     padding: 15px;
@@ -704,8 +701,8 @@ body {
 
 .formulario-registro {
     margin: 1em 0 !important;
-    background: #9b7749;
-    box-shadow: 0 4px 10px rgba(0.9, 0.9, 0.9, 0.9);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background: linear-gradient( 45deg, rgba(29, 236, 197, 0.5), rgba(91, 14, 214, 0.5) 100%);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: left;
@@ -716,7 +713,6 @@ body {
 
 .formulario-registro-container {
     padding: 2em;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .formulario-registro-left {
@@ -734,7 +730,6 @@ body {
 .container-formulario {
     border: 5px solid var(--third-color);
     background-color: white;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.9);
     width: 100%;
 }
 
@@ -798,7 +793,7 @@ body {
     border-radius: 6px;
     display: block;
     padding: 10px;
-    font-size: 14px;
+    font-size: 12px;
     width: 85%;
     border: 3px solid var(--secondary-color);
 }
@@ -845,19 +840,51 @@ body {
 .container-formulario .form-check {
     position: relative;
     margin-bottom: 1.5em;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
 }
 
 .container-formulario .terms-error{
     position: absolute;
     color: #e74c3c;
-    top: 20px;
-    font-size: 14px;
+    top: 35px;
+    left: 0;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.username-error,
+.username-length-error,
+.email-error,
+.email-format-error,
+.password-error,
+.password-format,
+.password2-error,
+.password-match-error{
+    position: absolute;
+    color: #e74c3c;
+    top: 50px;
+    font-size: 11px;
 }
 
 
-@media (max-width: 576px) {
+
+@media (min-width: 494px) {
+    .terms-error{
+        top: 40px;
+    }
+
+}
+
+@media (min-width: 535px) {
+    .container-formulario .terms-error{
+        top: 20px;
+        left: 0;
+    }
+}
+
+
+@media (min-width: 576px) {
     .formulario-registro-left {
         display: none;
     }
@@ -879,10 +906,14 @@ body {
         margin-bottom: 2.5em !important;
     }
     .formulario-registro form {
-        font-size: 12px !important;
+        font-size: 12px;
+    }
+
+    .formulario-registro .form-control input{
+        font-size: 14px;
     }
     .formulario-registro label {
-        font-size: 12px !important;
+        font-size: 14px;
     }
     .username-error,
     .username-length-error,
@@ -891,8 +922,18 @@ body {
     .password-error,
     .password-format,
     .password2-error,
-    .password-match-error {
-        font-size: 12px !important;
+    .password-match-error,
+    .terms-error{
+        font-size: 14px !important;
+    }
+    
+    .container-formulario .form-check {
+        font-size: 14px;
+    }
+
+    .container-formulario .terms-error{
+        top: 39px;
+        left: 0;
     }
 }
 
@@ -900,6 +941,17 @@ body {
     .formulario-sociales {
         width: 50%;
     }
+}
+
+@media (min-width: 768px) {
+    .formulario-sociales {
+        width: 50%;
+    }
+
+    .terms-error{
+        top: 18px !important;
+    }
+
 }
 
 @media (min-width: 992px) {
@@ -928,10 +980,10 @@ body {
         width: 50%;
     }
     .formulario-registro {
-        background-image: url("../img-test/Héroe_de_Dragon_Quest_XI.png");
-        background-repeat: no-repeat;
+        background: url("../img-test/Héroe_de_Dragon_Quest_XI.png"), linear-gradient(to right top, #964b00, #a46223, #b17840, #be8f5e, #cba57c);;
         background-size: contain;
-        background-position: -4.5em 0em;
+        background-repeat: no-repeat;
+        background-position: -6.5em 0em, 100%
     }
 }
 
@@ -939,29 +991,9 @@ body {
     .formulario-registro {
         background-repeat: no-repeat;
         background-size: contain;
-        background-position: -1.6em 0;
+        background-position: -2.5em 0em, 100%
     }
 }
-
-
-/* Errores formulario */
-
-
-
-.username-error,
-.username-length-error,
-.email-error,
-.email-format-error,
-.password-error,
-.password-format,
-.password2-error,
-.password-match-error{
-    position: absolute;
-    color: #e74c3c;
-    top: 50px;
-    font-size: 14px;
-}
-
 
 /* Formulario Contacto*/
 
@@ -1224,4 +1256,122 @@ body {
     .email-valido {
         font-size: 10px;
     }
+}
+
+
+
+/* Contacto datos */ 
+.datos-contacto{
+    background: var(--third-color);
+    height: 55vh;
+    padding: 4em 2em;
+
+}
+
+.datos-contacto p{
+    margin: 0;
+}
+
+.datos-contacto i{
+    font-size: 1.3rem;
+    font-weight: 600;
+    vertical-align: middle;
+}
+
+#map{
+    position: relative;
+    height: 100%;
+    
+}
+
+.datos-contacto-left{
+    width: 50%;
+}
+
+.datos-contacto-right {
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+
+}
+
+.contacto-right-bottom{
+    height: 80%;
+    padding: 2em;
+    padding-top: 0;
+    padding-right: 0;
+}
+
+.contacto-right-bottom-col1{
+    height: 50%;
+    margin-bottom: 3em;
+}
+
+.datos-contacto .col-top{
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    height: 30%;
+    
+}
+
+.datos-contacto .col-top-left{
+    display: flex;
+    width: 20%;
+    background-color: var(--primary-color);
+    justify-content: center;
+    padding-top: 0.6em;
+}
+
+.datos-contacto .col-top-right{
+    display: flex;
+    align-items: center;
+    width: 80%;
+}
+
+.datos-contacto .col-bottom{
+    display: flex;
+    height: 80%;
+    background-color: #fff;
+    border: px solid rgb(0, 0, 0);
+    color: #000000;
+    padding: 1em;
+    align-items: center;
+}
+
+.datos-contacto .col-correos{
+    flex-direction: column !important;
+    justify-content: center;
+    text-align: left !important;
+}
+
+.datos-contacto .col-redes-sociales{
+    justify-content: center;
+}
+
+.datos-contacto .col-redes-sociales a{
+    margin-left: 1em !important;
+    background-color: var(--primary-color);
+}
+
+.datos-contacto .col-redes-sociales a:hover{
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.contacto-right-bottom-col2{
+    height: 50%;
+}
+
+
+.datos-contacto .col + .col{
+    margin-left: 2em;
+}
+
+.datos-contacto span{
+    font-size: 1.3rem;
+    padding-left: 0.8rem;
+}
+
+.datos-contacto .col{
+    height: 100%;
 }
