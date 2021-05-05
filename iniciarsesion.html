@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geek Nation</title>
+    <link rel="icon" href="./img/logo-head.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/bd9eab947e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <body>
+        <div class="container" id="start-page">
+            <section class="top-header d-none d-lg-block">
+                <div class="d-flex">
+                    <div class="lado-izq">
+                        <div><span class="eslogan">La mejor tienda Geek del país </span>
+                        </div>
+                    </div>
+                    <div class="lado-medio d-flex flex-grow-1 justify-content-end">
+                        <div><a href="ayuda.html"><span class=" material-icons">help</span>
+                                <span class="material-icons-text">Centro de ayuda</span></a>
+                        </div>
+                        <div><a href="tel:+56213372700"><span class=" material-icons">call</span>
+                                <span class="material-icons-text">+562 1337 2700</span></a>
+                        </div>
+                    </div>
+                    <div class="lado-der d-flex flex-grow-2 justify-content-end">
+
+                        <div class="">
+                            <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+                            <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+                            <a href="#" class="fa fa-whatsapp"></a>
+                            <a href="https://discord.gg/XzR7fRqgqE" class="fab fa-discord"></a>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </section>
+        </div>
+        <div class="container">
+            <section class="main-header">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container">
+                        <a class="navbar-brand" href="#">
+                            <div class="logo-container">
+                                <img src="./img/logo-head.png" alt="logo" class="logo-img">
+                                <h4 class="logo-text">
+                                    <span class="logo-text-geek">Geek</span>
+                                    <span class="logo-text-nation">Nation</span>
+                                </h4>
+                            </div>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+
+
+                        <!-- Menu version movil -->
+                        <!-- Colocar usuario en version movil -->
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                            <ul class="navbar-nav w-100 mb-2 mb-lg-0">
+                                <div class="main-menu-web w-100 d-flex align-items-center">
+                                    <li class="nav-item d-none d-lg-block busqueda-web">
+                                        <form class="d-flex input-group w-auto d-lg">
+                                            <input type="search" class="form-control" placeholder="Busqueda..." aria-label="Search" />
+                                            <button class="btn btn-outline-primary" type="button" data-mdb-ripple-color="dark">
+                                                <span class="material-icons search-icon">search
+                                                </span>
+                                            </button>
+                                        </form>
+                                    </li>
+
+                                    <div class="botones-end-menu d-flex align-items-center">
+                                        <li class="nav-item d-none d-lg-block ">
+                                            <a class="nav-link" href="https://www.starken.cl/seguimiento"><span
+                                                    class="material-icons">local_shipping</span><span
+                                                    class="material-icons-text">Seguimiento</a>
+                                        </li>
+                                        <li class="nav-item dropdown d-flex borde-izquierdo-menu  d-none d-lg-block">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <span class="material-icons">person</span> <span class="material-icons-text">Mi
+                                                    cuenta</span>
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                                <li><a class="dropdown-item" href="#">Iniciar Sesión</a></li>
+                                                <li><a class="dropdown-item" href="#">Registrate</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="nav-item borde-izquierdo-menu  d-none d-lg-block">
+                                            <a class="nav-link" href="#"><span
+                                                    class="material-icons">shopping_cart</span><span
+                                                    class="material-icons-text">Carrito</a>
+                                        </li>
+                                    </div>
+                                </div>
+
+
+
+
+
+
+                                <!-- Categorias  version movil-->
+                                <div class="top-menu-movil d-flex justify-content-between d-lg-none">
+                                    <a class="nav-link d-lg-none" href="https://www.starken.cl/seguimiento"><span
+                                            class="material-icons">local_shipping</span><span
+                                            class="material-icons-text">Seguimiento</a>
+
+                                    <li class=" nav-item d-lg-none ">
+                                        <a class="nav-link" href="#"><span class="material-icons">person</span><span
+                                                class="material-icons-text">Mi cuenta</a>
+                                    </li>
+                                    <li class="nav-item d-lg-none">
+                                        <a class="nav-link" href="#"><span class="material-icons">shopping_cart</span><span
+                                                class="material-icons-text">Carrito</a>
+                                    </li>
+                                </div>
+
+
+                                <li class="nav-item d-lg-none busqueda-movil">
+                                    <form class="d-flex input-group w-auto d-lg">
+                                        <input type="search" class="form-control" placeholder="Busqueda..." aria-label="Search" />
+                                        <button class="btn btn-outline-primary" type="button" data-mdb-ripple-color="dark">
+                                            <span class="material-icons search-icon">search
+                                            </span>
+                                        </button>
+                                    </form>
+                                </li>
+                                <p class="d-lg-none titulo-categorias">Categorias</p>
+                                <hr class="hr-categorias d-lg-none">
+                                <div class="categorias-busqueda-movil d-lg-none">
+                                    <div class="busqueda-movil-izq d-lg-none">
+
+                                        <li class="nav-item dropdown d-lg-none">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Videojuegos
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                                <li><a class="dropdown-item" href="#">PS5</a></li>
+                                                <li><a class="dropdown-item" href="#">PS4</a></li>
+                                                <li><a class="dropdown-item" href="#">Xbox Series X/S</a></li>
+                                                <li><a class="dropdown-item" href="#">Xbox Series</a></li>
+                                                <li><a class="dropdown-item" href="#">Nintendo Switch</a></li>
+                                                <li><a class="dropdown-item" href="#">Ver todo</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item dropdown d-lg-none">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Comic/Manga
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                                <li><a class="dropdown-item" href="#">Marvel</a></li>
+                                                <li><a class="dropdown-item" href="#">DC</a></li>
+                                                <li><a class="dropdown-item" href="#">Occidental</a></li>
+                                                <li><a class="dropdown-item" href="#">Manga</a></li>
+                                                <li><a class="dropdown-item" href="#">Manhwa</a></li>
+                                                <li><a class="dropdown-item" href="#">Revistas</a></li>
+                                                <li><a class="dropdown-item" href="#">Ver todo</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item dropdown d-lg-none">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Coleccionables
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                                <li><a class="dropdown-item" href="#">TCG</a></li>
+                                                <li><a class="dropdown-item" href="#">Lego</a></li>
+                                                <li><a class="dropdown-item" href="#">Estatuas</a></li>
+                                                <li><a class="dropdown-item" href="#">Pop</a></li>
+                                                <li><a class="dropdown-item" href="#">Amiibos</a></li>
+                                                <li><a class="dropdown-item" href="#">Peluches</a></li>
+                                                <li><a class="dropdown-item" href="#">Nendoroid</a></li>
+                                                <li><a class="dropdown-item" href="#">Ver todo</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item dropdown d-lg-none">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Accesorios
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                                <li><a class="dropdown-item" href="#">Ropa</a></li>
+                                                <li><a class="dropdown-item" href="#">Billeteras</a></li>
+                                                <li><a class="dropdown-item" href="#">Llaveros</a></li>
+                                                <li><a class="dropdown-item" href="#">AROS</a></li>
+                                                <li><a class="dropdown-item" href="#">Anillos</a></li>
+                                                <li><a class="dropdown-item" href="#">Mochilas</a></li>
+                                                <li><a class="dropdown-item" href="#">Cosplay</a></li>
+                                                <li><a class="dropdown-item" href="#">Ver todo</a></li>
+
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item dropdown d-lg-none">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Blu-Ray
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                                <li><a class="dropdown-item" href="#">Peliculas</a></li>
+                                                <li><a class="dropdown-item" href="#">Dramas</a></li>
+                                                <li><a class="dropdown-item" href="#">Series</a></li>
+                                                <li><a class="dropdown-item" href="#">Anime</a></li>
+                                                <li><a class="dropdown-item" href="#">Ver todo</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item dropdown d-lg-none">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Cd's Musicales
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                                <li><a class="dropdown-item" href="#">K-Pop</a></li>
+                                                <li><a class="dropdown-item" href="#">Japón</a></li>
+                                                <li><a class="dropdown-item" href="#">Soundtracks</a></li>
+                                                <li><a class="dropdown-item" href="#">Ver todo</a></li>
+                                            </ul>
+                                        </li>
+                                    </div>
+                                    <div class="busqueda-movil-der d-lg-none"><img src="./img-test/img-chicas/megaman.png" alt="">
+                                    </div>
+                                </div>
+
+                                <!-- Resto del menu -->
+
+                                <p class="d-lg-none titulo-categorias">Servicio al cliente</p>
+                                <hr class="hr-categorias d-lg-none">
+                                <li class="nav-item d-lg-none">
+                                    <a class="nav-link" href="#">Centro de Ayuda</a>
+                                </li>
+
+
+                            </ul>
+
+                        </div>
+                    </div>
+                </nav>
+            </section>
+
+            <section class="header-bottom d-none d-lg-block">
+                <ul class="nav nav-pills nav-fill menu-categorias">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Videojuegos</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">PS5</a></li>
+                            <li><a class="dropdown-item" href="#">PS4</a></li>
+                            <li><a class="dropdown-item" href="#">Xbox Series X/S</a></li>
+                            <li><a class="dropdown-item" href="#">Xbox Series</a></li>
+                            <li><a class="dropdown-item" href="#">Nintendo Switch</a></li>
+                            <li><a class="dropdown-item" href="#">Ver todo</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Comic/Manga</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Marvel</a></li>
+                            <li><a class="dropdown-item" href="#">DC</a></li>
+                            <li><a class="dropdown-item" href="#">Occidental</a></li>
+                            <li><a class="dropdown-item" href="#">Manga</a></li>
+                            <li><a class="dropdown-item" href="#">Manhwa</a></li>
+                            <li><a class="dropdown-item" href="#">Revistas</a></li>
+                            <li><a class="dropdown-item" href="#">Ver todo</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Coleccionables</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">TCG</a></li>
+                            <li><a class="dropdown-item" href="#">Lego</a></li>
+                            <li><a class="dropdown-item" href="#">Estatuas</a></li>
+                            <li><a class="dropdown-item" href="#">Pop</a></li>
+                            <li><a class="dropdown-item" href="#">Amiibos</a></li>
+                            <li><a class="dropdown-item" href="#">Peluches</a></li>
+                            <li><a class="dropdown-item" href="#">Nendoroid</a></li>
+                            <li><a class="dropdown-item" href="#">Ver todo</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Accesorios</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Ropa</a></li>
+                            <li><a class="dropdown-item" href="#">Billeteras</a></li>
+                            <li><a class="dropdown-item" href="#">Llaveros</a></li>
+                            <li><a class="dropdown-item" href="#">AROS</a></li>
+                            <li><a class="dropdown-item" href="#">Anillos</a></li>
+                            <li><a class="dropdown-item" href="#">Mochilas</a></li>
+                            <li><a class="dropdown-item" href="#">Cosplay</a></li>
+                            <li><a class="dropdown-item" href="#">Ver todo</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Blu-Ray</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Peliculas</a></li>
+                            <li><a class="dropdown-item" href="#">Dramas</a></li>
+                            <li><a class="dropdown-item" href="#">Series</a></li>
+                            <li><a class="dropdown-item" href="#">Anime</a></li>
+                            <li><a class="dropdown-item" href="#">Ver todo</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Cd's Musicales</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">K-Pop</a></li>
+                            <li><a class="dropdown-item" href="#">Japón</a></li>
+                            <li><a class="dropdown-item" href="#">Soundtracks</a></li>
+                            <li><a class="dropdown-item" href="#">Ver todo</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+        <!--   FORMULARIO   -->
+
+
+        <div class="container contenido-formulario">
+            <section class="formulario-registro-2">
+                <div class="row">
+                    <div class="d-flex formulario-registro-container">
+                        <div class="formulario-2-registro-left">
+                            &nbsp;
+                        </div>
+                        <div class="formulario-2-registro--right">
+                            <div class="container-formulario-2">
+
+
+                                <div class="formulario-2-header">
+                                    <h2>¡Bienvenid@!</h2>
+                                </div>
+                                <br>
+                                <div class="formulario-2-sociales">
+                                    <a class="btn btn-outline-light btn-floating m-1" href="https://accounts.google.com/ServiceLogin/signinchooser?hl=es&passive=true&continue=https%3A%2F%2Fwww.google.cl%2F&ec=GAZAmgQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin" role="button"><i class="fab fa-google"></i></a>
+                                    <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/" role="button"><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/login" role="button"><i class="fab fa-twitter"></i></a>
+                                </div>
+
+                                <form action="form" class="form" id="formulario-submit">
+                                    <div class="input-group form-control">
+                                        <i class="fas fa-user"></i>
+                                        <input type="text" placeholder="Ingrese su correo" id="correo">
+
+
+
+                                    </div>
+
+                                    <span class="error">El campo de email debe ser rellenado</span>
+                                    <span class="email-valido">El formato de email debe ser xxxx@dominio.com</span>
+                                    <br>
+
+
+                                    <div class="input-group form-control">
+                                        <i class="fas fa-lock"></i>
+                                        <input type="password" placeholder="Ingrese su contraseña" id="clave">
+                                    </div>
+
+                                    <span class="errorVacio">El campo de contraseña debe ser rellenado</span>
+                                    <span class="errorClave">El formato de contraseña debe tener al menos 3 caracteres</span>
+
+                                    <br>
+                                    <div class="recordatorio">
+                                        <a style="text-decoration:none" href="clave.html" ;>Olvidé mi contraseña</a>
+                                    </div>
+
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">Mantener sesión iniciada</label>
+                                    </div>
+
+                                    <button type="submit" id="submit">Iniciar sesión </button>
+
+                                </form>
+
+                            </div>
+                        </div>
+            </section>
+            </div>
+            </div>
+        </div>
+        </div>
+
+
+
+
+        <!-- FOOTER -->
+
+
+        <div class="container contenido-footer">
+            <section class="footer-final text-white text-center text-md-start">
+                <div class="social-media-footer">
+                    <!-- Facebook -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com" role="button"><i
+                    class="fab fa-facebook-f"></i></a>
+
+                    <!-- Instagram -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com" role="button"><i
+                    class="fab fa-instagram"></i></a>
+
+                    <!-- WhatsApp -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                    class="fab fa-whatsapp"></i></a>
+
+                    <!-- Discord -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="https://discord.gg/XzR7fRqgqE" role="button"><i
+                    class="fab fa-discord"></i></a>
+
+                </div>
+
+
+                <!--Grid column-->
+
+                <div class="row footer-text">
+                    <div class="col-lg-4 col-md-4 titulos-categorias-footer">
+                        <h5 style="color:#38b6ff;" class=" text-uppercase-mb-0">Servicios Geek Nation</h5>
+                        <hr style=" height: 4px; background-color:#38b6ff; ">
+
+                        <ul class=" list-unstyled mb-0 ">
+                            <li>
+                                <a href=" #! " style=" text-decoration:none " class=" text-white ">¿Como comprar en Geek
+                            Nation?</a>
+                            </li>
+                            <li>
+                                <a href=" #! " style=" text-decoration:none " class=" text-white ">Preguntas
+                            frecuentes</a>
+                            </li>
+                            <li>
+                                <a href=" " style=" text-decoration:none " class=" text-white ">Guia para padres</a>
+                            </li>
+                            <li>
+                                <a href=" " style=" text-decoration:none " class=" text-white ">Atención por Discord</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+
+                    <div class=" col-lg-4 col-md-4 titulos-categorias-footer">
+                        <h5 style=" color:#38b6ff;" class="text-uppercase-mb-0">Ayuda al Cliente </h5>
+                        <hr style=" height: 4px; background-color:#38b6ff;">
+                        <ul class="list-unstyled mb-0 ">
+                            <li>
+                                <a href="#! " style="text-decoration:none " class="text-white ">Reglas y condiciones</a>
+                            </li>
+                            <li>
+                                <a href="#! " style="text-decoration:none " class="text-white ">Devoluciones</a>
+                            </li>
+                            <li>
+                                <a href="#! " style="text-decoration:none " class="text-white ">Servicio Tecnico</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 titulos-categorias-footer">
+                        <h5 style="color:#38b6ff;" class=" text-uppercase-mb-0">Trabaja con nosotros</h5>
+                        <hr style="height: 4px;background-color:#38b6ff;">
+
+
+
+                        <ul class="list-unstyled ">
+                            <li>
+                                <a href="#! " style="text-decoration:none " class="text-white ">¿Quieres trabajar con
+                            nosotros?</a>
+                            </li>
+                            <li>
+                                <a href="#! " style="text-decoration:none " class="text-white ">¿Quieres ser
+                            distribuidor mayorista?</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="text-center footer-copyright">
+                    © 2021 Cracks Engineers S.A - Todos los derechos reservados
+                </div>
+            </section>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src=" https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js " integrity=" sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG " crossorigin=" anonymous "></script>
+        <script src=" https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js " integrity=" sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG " crossorigin=" anonymous "></script>
+        <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js " integrity=" sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc " crossorigin=" anonymous "></script>
+        <script src="jquery.js"></script>
+
+    </body>
+
+</html>
