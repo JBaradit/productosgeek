@@ -24,25 +24,25 @@
                     </div>
                 </div>
                 <div class="lado-medio d-flex flex-grow-1 justify-content-end">
-                    <div><a href="ayuda.html"><span class=" material-icons">help</span>
-                            <span class="material-icons-text">Centro de ayuda</span></a>
+                    <div>
+                        <a href="contacto.html"><span class="material-icons">help</span>
+                            <span class="material-icons-text top-header-contact">Centro de ayuda</span></a>
                     </div>
-                    <div><a href="tel:+56213372700"><span class=" material-icons">call</span>
-                            <span class="material-icons-text">+562 1337 2700</span></a>
+                    <div>
+                        <a href="tel:+56213372700"><span class=" material-icons">call</span>
+                            <span class="material-icons-text top-header-contact">+562 1337 2700</span></a>
                     </div>
                 </div>
                 <div class="lado-der d-flex flex-grow-2 justify-content-end">
 
                     <div class="">
-                        <a href="https://www.facebook.com" class="fa fa-facebook"></a>
-                        <a href="https://www.instagram.com" class="fa fa-instagram"></a>
-                        <a href="#" class="fa fa-whatsapp"></a>
-                        <a href="https://discord.gg/XzR7fRqgqE" class="fab fa-discord"></a>
+                        <a href="https://www.facebook.com" class="fa fa-facebook top-header-redes"></a>
+                        <a href="https://www.instagram.com" class="fa fa-instagram top-header-redes"></a>
+                        <a href="#" class="fa fa-whatsapp top-header-redes"></a>
+                        <a href="https://discord.gg/XzR7fRqgqE" class="fab fa-discord top-header-redes"></a>
 
                     </div>
                 </div>
-
-
             </div>
 
         </section>
@@ -51,7 +51,7 @@
         <section class="main-header">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container">
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="index.html">
                         <div class="logo-container">
                             <img src="./img/logo-head.png" alt="logo" class="logo-img">
                             <h4 class="logo-text">
@@ -102,7 +102,7 @@
                                         </a>
                                         <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
                                             <li><a class="dropdown-item" href="#">Iniciar Sesión</a></li>
-                                            <li><a class="dropdown-item" href="#">Registrate</a></li>
+                                            <li><a class="dropdown-item" href="registrousuario.html">Registrate</a></li>
                                         </ul>
                                     </li>
 
@@ -341,6 +341,7 @@
         </section>
     </div>
 
+
     <!--   FORMULARIO   -->
     <div class="container">
         <section class="formulario-registro">
@@ -362,29 +363,49 @@
                             <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/login"
                                 role="button"><i class="fab fa-twitter"></i></a>
                         </div>
-                        <form action="form" class="form">
+                        <form id="formulario-registro" action="form" class="form" method="POST">
                             <div class="input-group form-control">
-                                <i class="fas fa-user"></i>
+                                <i class="fas fa-user icono-input"></i>
                                 <input type="text" placeholder="Ingrese su nombre" id="username">
+                                <i id="username-success-icon" class="fas fa-check-circle hidden-icons"></i>
+                                <i id="username-error-icon" class="fas fa-exclamation-circle hidden-icons"></i>
+                                <span class="username-error">Debes ingresar tu nombre</span>
+                                <span class="username-length-error">El nombre debe tener mínimo 3 carácteres</span>
                             </div>
                             <div class="input-group form-control">
-                                <i class="fas fa-envelope"></i>
+                                <i class="fas fa-envelope icono-input"></i>
                                 <input type="text" placeholder="Ingrese su correo" id="email">
+                                <i id="email-success-icon" class="fas fa-check-circle hidden-icons"></i>
+                                <i id="email-error-icon" class="fas fa-exclamation-circle hidden-icons"></i>
+                                <span class="email-error">Debes ingresar un email</span>
+                                <span class="email-format-error">Introduce una dirección de correo valida</span>
                             </div>
                             <div class="input-group form-control">
-                                <i class="fas fa-lock"></i>
+                                <i class="fas fa-lock icono-input"></i>
                                 <input type="password" placeholder="Contraseña" id="password">
+                                <i id="password-success-icon" class="fas fa-check-circle hidden-icons"></i>
+                                <i id="password-error-icon" class="fas fa-exclamation-circle hidden-icons"></i>
+                                <span class="password-error">Debes ingresar una contraseña</span>
+                                <span class="password-format">La contraseña debe tener mínimo 8 caracteres</span>
                             </div>
                             <div class="input-group form-control">
-                                <i class="fas fa-lock"></i>
+                                <i class="fas fa-lock icono-input"></i>
                                 <input type="password" placeholder="Confirmar contraseña" id="password2">
+                                <i id="password2-success-icon" class="fas fa-check-circle hidden-icons"></i>
+                                <i id="password2-error-icon" class="fas fa-exclamation-circle hidden-icons"></i>
+                                <span class="password2-error">Debes confirmar tu contraseña</span>
+                                <span class="password-match-error">Las contraseñas no coindicen</span>
                             </div>
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <input type="checkbox" class="form-check-input" id="fr-checkbox">
                                 <label class="form-check-label" for="exampleCheck1">Estoy de acuerdo con los terminos y
                                     condiciones</label>
+                                <br>
+                                <span id="terms-error" class="terms-error">Debes aceptar los terminos y
+                                    condiciones</span>
+
                             </div>
-                            <button>Registrarse</button>
+                            <button type="submit">Registrarse</button>
                         </form>
                     </div>
                 </div>
@@ -392,11 +413,10 @@
         </section>
     </div>
 
+
     <!-- FOOTER -->
-
-
-    <div class="container contenido-footer">
-        <section class="footer-final text-white text-center text-md-start">
+    <div class="container">
+        <section class="footer-final contenido-footer text-white text-center text-md-start">
             <div class="social-media-footer">
                 <!-- Facebook -->
                 <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com" role="button"><i
@@ -481,12 +501,20 @@
                 </div>
 
             </div>
-            <div class="text-center footer-copyright">
-                © 2021 Cracks Engineers S.A - Todos los derechos reservados
-            </div>
+
         </section>
+        <div class="text-center footer-copyright m-0 text-white">
+            © 2021 Cracks Engineers S.A - Todos los derechos reservados
+        </div>
     </div>
 
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src=" https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js "
+        integrity=" sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG "
+        crossorigin=" anonymous "></script>
     <script src=" https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js "
         integrity=" sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG "
         crossorigin=" anonymous "></script>
@@ -494,6 +522,7 @@
         integrity=" sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc "
         crossorigin=" anonymous "></script>
 
+    <script src="script/jquery.js"></script>
 </body>
 
 </html>
