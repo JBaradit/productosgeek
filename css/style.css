@@ -8,7 +8,6 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    
 }
 
 
@@ -815,14 +814,14 @@ body {
     position: absolute;
     display: none;
     top: 14px;
-    right: 20px;   
+    right: 20px;
 }
 
-.formulario-registro .fa-exclamation-circle{
+.formulario-registro .fa-exclamation-circle {
     color: #e74c3c;
 }
 
-.formulario-registro .fa-check-circle{
+.formulario-registro .fa-check-circle {
     color: #2ecc71;
 }
 
@@ -844,7 +843,7 @@ body {
     font-weight: 600;
 }
 
-.container-formulario .terms-error{
+.container-formulario .terms-error {
     position: absolute;
     color: #e74c3c;
     top: 35px;
@@ -860,29 +859,25 @@ body {
 .password-error,
 .password-format,
 .password2-error,
-.password-match-error{
+.password-match-error {
     position: absolute;
     color: #e74c3c;
     top: 50px;
     font-size: 11px;
 }
 
-
-
 @media (min-width: 494px) {
-    .terms-error{
+    .terms-error {
         top: 40px;
     }
-
 }
 
 @media (min-width: 535px) {
-    .container-formulario .terms-error{
+    .container-formulario .terms-error {
         top: 20px;
         left: 0;
     }
 }
-
 
 @media (min-width: 576px) {
     .formulario-registro-left {
@@ -908,8 +903,7 @@ body {
     .formulario-registro form {
         font-size: 12px;
     }
-
-    .formulario-registro .form-control input{
+    .formulario-registro .form-control input {
         font-size: 14px;
     }
     .formulario-registro label {
@@ -923,15 +917,13 @@ body {
     .password-format,
     .password2-error,
     .password-match-error,
-    .terms-error{
+    .terms-error {
         font-size: 14px !important;
     }
-    
     .container-formulario .form-check {
         font-size: 14px;
     }
-
-    .container-formulario .terms-error{
+    .container-formulario .terms-error {
         top: 39px;
         left: 0;
     }
@@ -947,11 +939,9 @@ body {
     .formulario-sociales {
         width: 50%;
     }
-
-    .terms-error{
+    .terms-error {
         top: 18px !important;
     }
-
 }
 
 @media (min-width: 992px) {
@@ -980,7 +970,8 @@ body {
         width: 50%;
     }
     .formulario-registro {
-        background: url("../img-test/Héroe_de_Dragon_Quest_XI.png"), linear-gradient(to right top, #964b00, #a46223, #b17840, #be8f5e, #cba57c);;
+        background: url("../img-test/Héroe_de_Dragon_Quest_XI.png"), linear-gradient(to right top, #964b00, #a46223, #b17840, #be8f5e, #cba57c);
+        ;
         background-size: contain;
         background-repeat: no-repeat;
         background-position: -6.5em 0em, 100%
@@ -994,6 +985,7 @@ body {
         background-position: -2.5em 0em, 100%
     }
 }
+
 
 /* Formulario Contacto*/
 
@@ -1028,11 +1020,11 @@ body {
 
 .form-completo .form-titulo,
 .form-completo2 .form-titulo {
+    font-size: 2rem;
     text-align: center;
     padding: 1em;
     color: #ffffff;
     font-weight: bold;
-    border-bottom: 1px solid #ffffff;
     background-color: var(--secondary-color);
 }
 
@@ -1041,6 +1033,7 @@ body {
     background-color: var(--primary-color);
     border: 0;
     padding-right: 0.5em;
+    margin-top: 15px;
     margin-bottom: 2em;
     width: 90%;
     margin-left: 20px;
@@ -1053,6 +1046,7 @@ body {
 
 .estilo1,
 .estilo2 {
+    font-size: 16px;
     width: 90%;
     padding-left: 10px;
     display: absolute;
@@ -1075,6 +1069,7 @@ body {
     padding: 15px;
     font-weight: bold;
     display: absolute;
+    margin-top: 5px;
     margin-left: 20px;
     margin-bottom: 0px;
     width: 90%;
@@ -1136,87 +1131,98 @@ body {
 
 .error-form {
     position: absolute;
-    top: 330px;
+    top: 350px;
 }
 
 .error-form1 {
     position: absolute;
-    top: 400px;
+    top: 420px;
 }
 
 .error-form2 {
     position: absolute;
-    top: 470px;
+    top: 490px;
 }
 
 .error-form3 {
     position: absolute;
-    top: 539px;
+    top: 559px;
 }
 
 .error-form4 {
     position: absolute;
-    top: 715px;
+    top: 735px;
 }
 
 .error-form5 {
     position: absolute;
-    top: 440px;
+    top: 465px;
     margin-left: 35px;
 }
 
 .error-form6 {
     position: absolute;
-    top: 510px;
+    top: 535px;
     margin-left: 35px;
 }
 
 .error-form7 {
     position: absolute;
-    top: 580px;
+    top: 605px;
     margin-left: 35px;
 }
 
 .error-form8 {
     position: absolute;
-    top: 650px;
+    top: 670px;
     margin-left: 35px;
 }
 
 .error-form9 {
     position: absolute;
-    top: 825px;
+    top: 850px;
     margin-left: 35px;
 }
 
 @media (max-width: 767px) {
     .form-completo2 .form-control,
     .form-completo2 .form-group .btn-primary {
-        margin-left: 25px;
+        margin-left: 40px;
+    }
+    .form-completo2 .form-control,
+    .form-completo2 .btn-primary {
+        font-size: 14px;
+    }
+    .estilo1,
+    .estilo2 {
+        width: 85%;
+    }
+    .estilo3 {
+        width: 97%;
     }
     .error-form5 {
         position: absolute;
-        top: 400px;
+        top: 427px;
         margin-left: 20px;
     }
     .error-form6 {
         position: absolute;
-        top: 470px;
+        top: 495px;
         margin-left: 20px;
     }
     .error-form7 {
         position: absolute;
-        top: 540px;
+        top: 560px;
         margin-left: 20px;
     }
     .error-form8 {
         position: absolute;
-        top: 608px;
+        top: 618px;
         margin-left: 20px;
     }
     .error-form9 {
         position: absolute;
-        top: 785px;
+        top: 775px;
         margin-left: 8px;
     }
 }
@@ -1224,31 +1230,47 @@ body {
 @media (max-width: 576px) {
     .form-completo2 .form-control,
     .form-completo2 .form-group .btn-primary {
-        margin-left: 30px;
+        margin-left: 33px;
+    }
+    .form-completo2 .form-titulo {
+        font-size: 1.5rem;
+    }
+    .estilo1,
+    .estilo2,
+    .form-completo2 .form-control,
+    .form-completo2 .btn-primary {
+        font-size: 14px;
+    }
+    .estilo1,
+    .estilo2 {
+        width: 85%;
+    }
+    .estilo3 {
+        width: 99%;
     }
     .error-form5 {
         position: absolute;
-        top: 390px;
+        top: 385px;
         margin-left: 10px;
     }
     .error-form6 {
         position: absolute;
-        top: 460px;
+        top: 450px;
         margin-left: 10px;
     }
     .error-form7 {
         position: absolute;
-        top: 530px;
+        top: 515px;
         margin-left: 10px;
     }
     .error-form8 {
         position: absolute;
-        top: 600px;
+        top: 570px;
         margin-left: 10px;
     }
     .error-form9 {
         position: absolute;
-        top: 772px;
+        top: 730px;
         margin-left: 13px;
     }
     .error4,
@@ -1256,35 +1278,39 @@ body {
     .email-valido {
         font-size: 10px;
     }
+    .error,
+    .error1,
+    .error2,
+    .error3 {
+        font-size: 12px;
+    }
 }
 
 
+/* Contacto datos */
 
-/* Contacto datos */ 
-.datos-contacto{
+.datos-contacto {
     background: var(--third-color);
     height: 55vh;
     padding: 4em 2em;
-
 }
 
-.datos-contacto p{
+.datos-contacto p {
     margin: 0;
 }
 
-.datos-contacto i{
+.datos-contacto i {
     font-size: 1.3rem;
     font-weight: 600;
     vertical-align: middle;
 }
 
-#map{
+#map {
     position: relative;
     height: 100%;
-    
 }
 
-.datos-contacto-left{
+.datos-contacto-left {
     width: 50%;
 }
 
@@ -1292,29 +1318,27 @@ body {
     flex-direction: column;
     width: 50%;
     height: 100%;
-
 }
 
-.contacto-right-bottom{
+.contacto-right-bottom {
     height: 80%;
     padding: 2em;
     padding-top: 0;
     padding-right: 0;
 }
 
-.contacto-right-bottom-col1{
+.contacto-right-bottom-col1 {
     height: 50%;
     margin-bottom: 3em;
 }
 
-.datos-contacto .col-top{
+.datos-contacto .col-top {
     background-color: rgb(0, 0, 0);
     color: #ffffff;
     height: 30%;
-    
 }
 
-.datos-contacto .col-top-left{
+.datos-contacto .col-top-left {
     display: flex;
     width: 20%;
     background-color: var(--primary-color);
@@ -1322,13 +1346,13 @@ body {
     padding-top: 0.6em;
 }
 
-.datos-contacto .col-top-right{
+.datos-contacto .col-top-right {
     display: flex;
     align-items: center;
     width: 80%;
 }
 
-.datos-contacto .col-bottom{
+.datos-contacto .col-bottom {
     display: flex;
     height: 80%;
     background-color: #fff;
@@ -1338,40 +1362,39 @@ body {
     align-items: center;
 }
 
-.datos-contacto .col-correos{
+.datos-contacto .col-correos {
     flex-direction: column !important;
     justify-content: center;
     text-align: left !important;
 }
 
-.datos-contacto .col-redes-sociales{
+.datos-contacto .col-redes-sociales {
     justify-content: center;
 }
 
-.datos-contacto .col-redes-sociales a{
+.datos-contacto .col-redes-sociales a {
     margin-left: 1em !important;
     background-color: var(--primary-color);
 }
 
-.datos-contacto .col-redes-sociales a:hover{
+.datos-contacto .col-redes-sociales a:hover {
     background-color: var(--primary-color);
     color: #fff;
 }
 
-.contacto-right-bottom-col2{
+.contacto-right-bottom-col2 {
     height: 50%;
 }
 
-
-.datos-contacto .col + .col{
+.datos-contacto .col+.col {
     margin-left: 2em;
 }
 
-.datos-contacto span{
+.datos-contacto span {
     font-size: 1.3rem;
     padding-left: 0.8rem;
 }
 
-.datos-contacto .col{
+.datos-contacto .col {
     height: 100%;
 }
