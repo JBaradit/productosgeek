@@ -1032,7 +1032,6 @@ body {
 .form-completo2 .form-control {
     background-color: var(--primary-color);
     border: 0;
-    padding-right: 0.5em;
     margin-top: 15px;
     margin-bottom: 2em;
     width: 90%;
