@@ -144,6 +144,158 @@ function validarTerminos() {
     }
 }
 
+/*validación formulario contacto*/
+
+function validarNombre1() {
+    let nombre = $('#usuario').val().trim()
+    if (nombre.length == 0) {
+        $('.error').show();
+        $('.error5').hide();
+    } else {
+        $('.error').hide();
+
+    }
+    if (nombre.length < 3 && nombre.length > 0) {
+        $('.error').hide();
+        $('.error5').show();
+    } else {
+        $('.error5').hide();
+    }
+}
+
+function validarCorreo() {
+    let correo = $('#correo').val().trim()
+
+    if (correo.length < 1) {
+        $('.error1').show();
+        $('.email-valido').hide();
+    } else {
+        $('.error1').hide();
+    }
+
+    if (!emailValido(correo) && (correo.length > 0)) {
+        $('.email-valido').show();
+    } else {
+        $('.email-valido').hide();
+    }
+}
+
+function validarTelefono() {
+    let telefono = $('#telefono').val().trim()
+    if (telefono.length == 0) {
+        $('.error2').show();
+        $('.telefono-valido').hide();
+        return;
+    }
+    if (telefono.length > 0 && telefono.length < 11) {
+        $('.error2').hide();
+        $('.telefono-valido').show();
+    }
+    if (telefono.length == 11) {
+        $('.error2').hide();
+        $('.telefono-valido').hide();
+    }
+    if (telefono.length > 11) {
+        $('.error2').hide();
+        $('.telefono-valido').show();
+    }
+
+}
+
+function validarMotivo() {
+    let opcion = $('select option:selected').val();
+
+    if (opcion != '0') {
+        $('.error3').hide();
+    } else {
+        $('.error3').show();
+    }
+}
+
+function validarMsj() {
+    let msg = $('#msg').val().trim()
+
+    if (msg.length < 20) {
+        $('.error4').show();
+        return;
+    } else {
+        $('.error4').hide();
+    }
+}
+
+/*Validación de campo formulario responsivo*/
+
+function validarNombre2() {
+    let nombre = $('#usuario1').val().trim()
+    if (nombre.length == 0) {
+        $('.error').show();
+        $('.error5').hide();
+    } else {
+        $('.error').hide();
+
+    }
+    if (nombre.length < 3 && nombre.length > 0) {
+        $('.error').hide();
+        $('.error5').show();
+
+    } else {
+        $('.error5').hide();
+    }
+}
+
+function validarCorreo2() {
+    let correo = $('#correo1').val().trim()
+
+    if (correo.length < 1) {
+        $('.error1').show();
+        $('.email-valido').hide();
+        return;
+    } else {
+        $('.error1').hide();
+    }
+
+    if (!emailValido(correo) && (correo.length > 0)) {
+        $('.email-valido').show();
+        return;
+    } else {
+        $('.email-valido').hide();
+    }
+}
+
+function validarTelefono2() {
+    let telefono = $('#telefono1').val().trim()
+    if (telefono.length == 0) {
+        $('.error2').show();
+        $('.telefono-valido').hide();
+        return;
+    }
+    if (telefono.length > 0 && telefono.length < 11) {
+        $('.error2').hide();
+        $('.telefono-valido').show();
+    }
+    if (telefono.length == 11) {
+        $('.error2').hide();
+        $('.telefono-valido').hide();
+    }
+    if (telefono.length > 11) {
+        $('.error2').hide();
+        $('.telefono-valido').show();
+    }
+
+}
+
+
+function validarMsj2() {
+    let msg = $('#msg1').val().trim()
+
+    if (msg.length < 20) {
+        $('.error4').show();
+        return;
+    } else {
+        $('.error4').hide();
+    }
+}
+
 $(document).ready(() => {
     $('.error').hide();
     $('.error1').hide();
@@ -162,8 +314,6 @@ $(document).ready(() => {
     $('.password2-error').hide();
     $('.password-match-error').hide();
     $('.terms-error').hide();
-
-
 
 
 
@@ -190,329 +340,61 @@ $(document).ready(() => {
         /* !! entero a booleano */
     });
 
+    /*Validacion de campo formulario contacto*/
 
-    /* VALIDACIÓN CONTACTO */
+    $('#usuario').blur(validarNombre1);
+    $('#correo').blur(validarCorreo);
+    $('#telefono').blur(validarTelefono);
+    $('#motivo').blur(validarMotivo);
+    $('#msg').blur(validarMsj);
 
-    $('#usuario').blur(function(evento) {
-        let nombre = $('#usuario').val().trim()
+    /*Validacion de campo formulario responsivo*/
 
-        if (nombre.length == 0) {
-            $('.error').show();
-            $('.error5').hide();
-        }
-        if (nombre.length < 3 && nombre.length > 0) {
-            $('.error').hide();
-            $('.error5').show();
+    $('#usuario1').blur(validarNombre2);
+    $('#correo1').blur(validarCorreo2);
+    $('#telefono1').blur(validarTelefono2);
+    $('#msg1').blur(validarMsj2);
 
-        } else {
-            $('.error5').hide();
-        }
 
-    });
-    $('#telefono').blur(function(evento) {
-        let telefono = $('#telefono').val().trim()
+    /*Validacion submit formulario contacto*/
 
-        if (telefono.length == 0) {
-            $('.error2').show();
-            $('.telefono-valido').hide();
-            return;
-        }
-        if (telefono.length > 0 && telefono.length < 11) {
-            $('.error2').hide();
-            $('.telefono-valido').show();
-        }
-        if (telefono.length == 11) {
-            $('.error2').hide();
-            $('.telefono-valido').hide();
-        }
-        if (telefono.length > 11) {
-            $('.error2').hide();
-            $('.telefono-valido').show();
-        }
+    $('#formulario-contacto').submit(function(e) {
+        let resultado = true;
+        resultado &= validarNombre1()
+        resultado &= validarCorreo()
+        resultado &= validarTelefono()
+        resultado &= validarMotivo()
+        resultado &= validarMsj()
 
-    });
-    $('#correo').blur(function(evento) {
-        let correo = $('#correo').val().trim()
-
-        if (correo.length < 1) {
-            $('.error1').show();
-            $('.email-valido').hide();
-            return;
-        } else {
-            $('.error1').hide();
-        }
-
-        if (!emailValido(correo) && (correo.length > 0)) {
-            $('.email-valido').show();
-            return;
-        } else {
-            $('.email-valido').hide();
-        }
+        /*resultado = resultado & validarNombre(); */
+        return !!resultado;
+        /* & boolean a enteros */
+        /* !! entero a booleano */
     });
 
-    $('#msg').blur(function(evento) {
-        let msg = $('#msg').val().trim()
+    /*Validacion submit formulario contacto responsivo*/
+    $('#formulario-contacto2').submit(function(e) {
+        let resultado = true;
+        resultado &= validarNombre2()
+        resultado &= validarCorreo2()
+        resultado &= validarTelefono2()
+        resultado &= validarMsj2()
 
-        if (msg.length < 20) {
-            $('.error4').show();
-            return;
-        } else {
-            $('.error4').hide();
-        }
-
-    });
-
-    $('#motivo').blur(function(evento) {
-        let opcion = $('select option:selected').val();
-
-        if (opcion != '0') {
-            $('.error3').hide();
-        } else {
-            $('.error3').show();
-        }
-
-    });
-
-    $('#usuario1').blur(function(evento) {
-        let nombre = $('#usuario1').val().trim()
-
-        if (nombre.length == 0) {
-            $('.error').show();
-            $('.error5').hide();
-            return;
-        }
-        if (nombre.length < 3 && nombre.length > 0) {
-            $('.error').hide();
-            $('.error5').show();
-
-        } else {
-            $('.error').hide();
-            $('.error5').hide();
-        }
-
-    });
-    $('#telefono1').blur(function(evento) {
-        let telefono = $('#telefono1').val().trim()
-
-
-        if (telefono.length == 0) {
-            $('.error2').show();
-            $('.telefono-valido').hide();
-        }
-        if (telefono.length > 0 && (telefono.length < 11)) {
-            $('.error2').hide();
-            $('.telefono-valido').show();
-
-        }
-        if (telefono.length == 11) {
-            $('.error2').hide();
-            $('.telefono-valido').hide();
-        }
-        if (telefono.length > 11) {
-            $('.error2').hide();
-            $('.telefono-valido').show();
-        }
-    });
-    $('#correo1').blur(function(evento) {
-        let correo = $('#correo1').val().trim()
-
-        if (correo.length < 1) {
-            $('.error1').show();
-            $('.email-valido').hide();
-            return;
-        } else {
-            $('.error1').hide();
-        }
-
-        if (!emailValido(correo) && (correo.length > 0)) {
-            $('.email-valido').show();
-
-            return;
-        } else {
-            $('.email-valido').hide();
-        }
-
-    });
-
-    $('#msg1').blur(function(evento) {
-        let msg = $('#msg1').val().trim()
-
-        if (msg.length < 20) {
-            $('.error4').show();
-            return;
-        } else {
-            $('.error4').hide();
-        }
-
-    });
-
-    $('#motivo1').blur(function(evento) {
-        let opcion1 = $('select option:selected').val();
-
-        if (opcion1 != '0') {
-            $('.error3').hide();
-        } else {
-            $('.error3').show();
-        }
-
-    });
-
-
-    $('#formulario-contacto').submit(function(evento) {
-        evento.preventDefault();
-        let nombre = $('#usuario').val().trim();
-        let correo = $('#correo').val().trim()
-        let telefono = $('#telefono').val().trim()
-        let msg = $('#msg').val().trim()
-        let opcion = $('select option:selected').val();
-
-        if (nombre.length == 0) {
-            $('.error').show();
-            $('.error5').hide();
-        }
-        if (nombre.length < 3 && nombre.length > 0) {
-            $('.error').hide();
-            $('.error5').show();
-
-        } else {
-            $('.error5').hide();
-        }
-
-        if (correo.length < 1) {
-            $('.error1').show();
-            return;
-        } else {
-            $('.error1').hide();
-        }
-
-        if (!emailValido(correo) && (correo.length > 0)) {
-            $('.email-valido').show();
-            return;
-        } else {
-            $('.email-valido').hide();
-        }
-
-        if (telefono.length == 0) {
-            $('.error2').show();
-            $('.telefono-valido').hide();
-        } else if (telefono.length > 0 && telefono.length < 11) {
-            $('.error2').hide();
-            $('.telefono-valido').show();
-        } else if (telefono.length == 11) {
-            $('.error2').hide();
-            $('.telefono-valido').hide();
-        } else if (telefono.length > 11) {
-            $('.error2').hide();
-            $('.telefono-valido').show();
-        }
-
-        if (msg.length < 20) {
-            $('.error4').show();
-            return;
-        } else {
-            $('.error4').hide();
-        }
-
-
-        if (opcion != '0') {
-            $('.error3').hide();
-        } else {
-            $('.error3').show();
-        }
-
-    });
-
-
-    /* Validación de formulario responsivo*/
-
-    $('#formulario-contacto1').submit(function(evento) {
-        evento.preventDefault();
-
-        let nombre = $('#usuario1').val().trim()
-
-        if (nombre.length == 0) {
-            $('.error').show();
-            $('.error5').hide();
-            return;
-        }
-        if (nombre.length < 3 && nombre.length > 0) {
-            $('.error').hide();
-            $('.error5').show();
-
-        } else {
-            $('.error').hide();
-            $('.error5').hide();
-        }
-
-    });
-    $('#formulario-contacto1').submit(function(evento) {
-        evento.preventDefault();
-        let telefono = $('#telefono1').val().trim()
-
-
-        if (telefono.length == 0) {
-            $('.error2').show();
-            $('.telefono-valido').hide();
-        } else if (telefono.length > 0 && (telefono.length < 11)) {
-            $('.error2').hide();
-            $('.telefono-valido').show();
-
-        } else if (telefono.length == 11) {
-            $('.error2').hide();
-            $('.telefono-valido').hide();
-        } else if (telefono.length > 11) {
-            $('.error2').hide();
-            $('.telefono-valido').show();
-        }
-    });
-    $('#formulario-contacto1').submit(function(evento) {
-        evento.preventDefault();
-
-        let correo = $('#correo1').val().trim()
-
-        if (correo.length < 1) {
-            $('.error1').show();
-            $('.email-valido').hide();
-            return;
-        } else {
-            $('.error1').hide();
-        }
-
-        if (!emailValido(correo) && (correo.length > 0)) {
-            $('.email-valido').show();
-
-            return;
-        } else {
-            $('.email-valido').hide();
-        }
-
-    });
-
-    $('#formulario-contacto1').submit(function(evento) {
-        evento.preventDefault();
-
-        let msg = $('#msg1').val().trim()
-
-        if (msg.length < 20) {
-            $('.error4').show();
-            return;
-        } else {
-            $('.error4').hide();
-        }
-
+        /*resultado = resultado & validarNombre(); */
+        return !!resultado;
+        /* & boolean a enteros */
+        /* !! entero a booleano */
     });
 
 
 });
-
-
-
 
 function emailValido(correo) {
     let patron = new RegExp(/^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]+$/);
 
     return patron.test(correo);
 }
+
 
 
 function iniciarMapa() {
