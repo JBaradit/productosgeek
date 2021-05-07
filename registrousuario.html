@@ -365,8 +365,11 @@
                         </div>
                         <form id="formulario-registro" action="https://formsubmit.co/ayudapgeek@gmail.com" class="form"
                             method="POST">
+                            <input type="hidden" name="_captcha" value="false">
                             <input type="hidden" name="_next"
                                 value="https://jbaradit.github.io/productosgeek/thankyou.html">
+                            <input type="hidden" name="_template" value="table">
+                            <input type="hidden" name="_subject" value="Nuevo usuario registrado!">
                             <div class="input-group form-control">
                                 <i class="fas fa-user icono-input"></i>
                                 <input type="text" placeholder="Ingrese su nombre" id="username" name="username">
@@ -385,7 +388,7 @@
                             </div>
                             <div class="input-group form-control">
                                 <i class="fas fa-lock icono-input"></i>
-                                <input type="password" placeholder="Contraseña" id="password" name="password">
+                                <input type="password" placeholder="Contraseña" id="password">
                                 <i id="password-success-icon" class="fas fa-check-circle hidden-icons"></i>
                                 <i id="password-error-icon" class="fas fa-exclamation-circle hidden-icons"></i>
                                 <span class="password-error">Debes ingresar una contraseña</span>
@@ -393,15 +396,14 @@
                             </div>
                             <div class="input-group form-control">
                                 <i class="fas fa-lock icono-input"></i>
-                                <input type="password" placeholder="Confirmar contraseña" id="password2"
-                                    name="confirm-password">
+                                <input type="password" placeholder="Confirmar contraseña" id="password2">
                                 <i id="password2-success-icon" class="fas fa-check-circle hidden-icons"></i>
                                 <i id="password2-error-icon" class="fas fa-exclamation-circle hidden-icons"></i>
                                 <span class="password2-error">Debes confirmar tu contraseña</span>
                                 <span class="password-match-error">Las contraseñas no coindicen</span>
                             </div>
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="fr-checkbox" name="terms">
+                                <input type="checkbox" class="form-check-input" id="fr-checkbox">
                                 <label class="form-check-label" for="exampleCheck1">Estoy de acuerdo con los terminos y
                                     condiciones</label>
                                 <br>
