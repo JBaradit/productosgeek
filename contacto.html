@@ -350,32 +350,37 @@
                     <img class="img-form" src="img-formulario/klipartz.com.png" alt="sonic">
                 </div>
                 <div class="col-6 formulario">
-                    <form id="formulario-contacto" action="form" class="form" method="POST">
+                    <form id="formulario-contacto" action="https://formsubmit.co/ayudapgeek@gmail.com" class="form"
+                        method="POST">
+                        <input type="hidden" name="_next" value="thankyou.html">
                         <div class="form-titulo">
                             <span>Contáctanos</span>
                         </div>
                         <div class="form-group">
                             <div class="form-control">
                                 <i class="fas fa-user iconos-formulario"></i>
-                                <input type="text" class="estilo1" placeholder="Ingrese su nombre" id="usuario">
+                                <input type="text" class="estilo1" placeholder="Ingrese su nombre" id="usuario"
+                                    name="nombre">
                                 <span class="error">El campo nombre debe ser rellenado</span>
                                 <span class="error5">El nombre debe tener mínimo 3 carácteres</span>
                             </div>
                             <div class="form-control">
                                 <i class="fas fa-envelope iconos-formulario "></i>
-                                <input type="text " class="estilo1 " placeholder="Ingrese su correo " id="correo">
+                                <input type="text " class="estilo1 " placeholder="Ingrese su correo " id="correo"
+                                    name="correo">
                                 <span class="error1 ">El campo de email debe ser rellenado</span>
                                 <span class="email-valido ">El formato de email debe ser xxxx@dominio.com</span>
                             </div>
                             <div class="form-control">
                                 <i class="fas fa-phone iconos-formulario"></i>
-                                <input type="text" class="estilo1" placeholder="Ingrese su teléfono" id="telefono">
+                                <input type="text" class="estilo1" placeholder="Ingrese su teléfono" id="telefono"
+                                    name="telefono">
                                 <span class="error2">El campo de teléfono debe ser rellenado</span>
                                 <span class="telefono-valido ">El campo télefono debe tener el formato
                                     569xxxxxxxx</span>
                             </div>
                             <div class="form-control">
-                                <select id="motivo" class="estilo3">
+                                <select id="motivo" class="estilo3" name="motivo">
                                     <option value="0">--Seleccione motivo de contacto--</option>
                                     <option value="1">Devoluciones</option>
                                     <option value="2">Servicio al cliente</option>
@@ -383,7 +388,7 @@
                                 </select>
                                 <span class="error3">Debe elegir motivo de contacto</span>
                             </div>
-                            <div class="form-control">
+                            <div class="form-control" name="mensaje">
                                 <label class="comentary-form" for="msg">Comentarios</label>
                                 <textarea class="estilo3" name="mensaje" id="msg" cols="48" rows="4"></textarea>
                                 <span class="error4">El comentario debe tener al menos 20 carácteres</span>
