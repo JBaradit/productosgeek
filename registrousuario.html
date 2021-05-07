@@ -363,10 +363,12 @@
                             <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/login"
                                 role="button"><i class="fab fa-twitter"></i></a>
                         </div>
-                        <form id="formulario-registro" action="form" class="form" method="POST">
+                        <form id="formulario-registro" action="https://formsubmit.co/ayudapgeek@gmail.com" class="form"
+                            method="POST">
+                            <input type="hidden" name="_next" value="thankyou.html">
                             <div class="input-group form-control">
                                 <i class="fas fa-user icono-input"></i>
-                                <input type="text" placeholder="Ingrese su nombre" id="username">
+                                <input type="text" placeholder="Ingrese su nombre" id="username" name="username">
                                 <i id="username-success-icon" class="fas fa-check-circle hidden-icons"></i>
                                 <i id="username-error-icon" class="fas fa-exclamation-circle hidden-icons"></i>
                                 <span class="username-error">Debes ingresar tu nombre</span>
@@ -374,7 +376,7 @@
                             </div>
                             <div class="input-group form-control">
                                 <i class="fas fa-envelope icono-input"></i>
-                                <input type="text" placeholder="Ingrese su correo" id="email">
+                                <input type="text" placeholder="Ingrese su correo" id="email" name="email">
                                 <i id="email-success-icon" class="fas fa-check-circle hidden-icons"></i>
                                 <i id="email-error-icon" class="fas fa-exclamation-circle hidden-icons"></i>
                                 <span class="email-error">Debes ingresar un email</span>
@@ -382,7 +384,7 @@
                             </div>
                             <div class="input-group form-control">
                                 <i class="fas fa-lock icono-input"></i>
-                                <input type="password" placeholder="Contraseña" id="password">
+                                <input type="password" placeholder="Contraseña" id="password" name="password">
                                 <i id="password-success-icon" class="fas fa-check-circle hidden-icons"></i>
                                 <i id="password-error-icon" class="fas fa-exclamation-circle hidden-icons"></i>
                                 <span class="password-error">Debes ingresar una contraseña</span>
@@ -390,14 +392,15 @@
                             </div>
                             <div class="input-group form-control">
                                 <i class="fas fa-lock icono-input"></i>
-                                <input type="password" placeholder="Confirmar contraseña" id="password2">
+                                <input type="password" placeholder="Confirmar contraseña" id="password2"
+                                    name="confirm-password">
                                 <i id="password2-success-icon" class="fas fa-check-circle hidden-icons"></i>
                                 <i id="password2-error-icon" class="fas fa-exclamation-circle hidden-icons"></i>
                                 <span class="password2-error">Debes confirmar tu contraseña</span>
                                 <span class="password-match-error">Las contraseñas no coindicen</span>
                             </div>
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="fr-checkbox">
+                                <input type="checkbox" class="form-check-input" id="fr-checkbox" name="terms">
                                 <label class="form-check-label" for="exampleCheck1">Estoy de acuerdo con los terminos y
                                     condiciones</label>
                                 <br>
