@@ -1287,3 +1287,18 @@ body {
     width: 100%;
 }
 
+
+
+.registro-exitoso{
+    margin: 2rem 0;
+    padding: 4rem;
+    background-color: rgba(148, 148, 148, 0.068);
+    text-align: center;
+
+}
+
+.registro-exitoso i{
+    color: #2ecc71;
+    font-size: 4rem;
+    padding-bottom: 1rem;
+}
