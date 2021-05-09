@@ -6,9 +6,17 @@
     --fourth-color: #36393E
 }
 
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
 body {
     font-family: 'Poppins', sans-serif;
 }
+
 
 
 /*----------------- lOGO CSS -----------------*/
@@ -188,9 +196,9 @@ body {
 }
 
 .top-menu-movil {
+    width: 100%;
     margin-top: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 0 15px;
     background-color: var(--third-color);
     border-radius: 5px;
 }
@@ -1220,17 +1228,23 @@ body {
     color: #fff;
 }
 
+
 .datos-contacto__left {
     width: 100%;
     max-width: 100%;
 }
 
 .datos-contacto__right {
-    width: 100%;
     padding: 0 2rem;
+    
 }
 
-.datos-contacto__cols .col+.col {
+.datos-contacto__cols{
+    flex-wrap: wrap;
+}
+
+.datos-contacto__cols > *{
+    max-width: 100%;
     margin-top: 1rem;
 }
 
@@ -1295,6 +1309,57 @@ body {
     color: #2ecc71;
     font-size: 4rem;
     padding-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+
+    .datos-contacto{
+        flex-direction: column;
+    }
+
+    #map{
+        height: 300px
+    }
+
+    
+
+    .datos-contacto__left{
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .datos-contacto__right{
+        width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .datos-contacto__left{
+        width: 50%;
+    }
+
+    .datos-contacto__right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        vertical-align: middle;
+        width: 50%;
+        padding: 0;
+        margin-left: 20px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .datos-contacto__left{
+        width: 100%;
+    }
+
+    .datos-contacto__right{
+        width: 100%;
+    }
+    
 }
 
 
