@@ -144,6 +144,7 @@ function validarTerminos() {
     }
 }
 
+
 /*validación formulario contacto*/
 
 function validarNombre1() {
@@ -158,8 +159,10 @@ function validarNombre1() {
     if (nombre.length < 3 && nombre.length > 0) {
         $('.error').hide();
         $('.error5').show();
+        return false;
     } else {
         $('.error5').hide();
+        return true;
     }
 }
 
@@ -175,8 +178,10 @@ function validarCorreo() {
 
     if (!emailValido(correo) && (correo.length > 0)) {
         $('.email-valido').show();
+        return false;
     } else {
         $('.email-valido').hide();
+        return true;
     }
 }
 
@@ -185,21 +190,18 @@ function validarTelefono() {
     if (telefono.length == 0) {
         $('.error2').show();
         $('.telefono-valido').hide();
-        return;
-    }
-    if (telefono.length > 0 && telefono.length < 11) {
-        $('.error2').hide();
-        $('.telefono-valido').show();
-    }
-    if (telefono.length == 11) {
-        $('.error2').hide();
-        $('.telefono-valido').hide();
-    }
-    if (telefono.length > 11) {
-        $('.error2').hide();
-        $('.telefono-valido').show();
+        return false;
     }
 
+    if (!/^56 ?9 ?[1-9][0-9]{3} ?[0-9]{4}$/.test(telefono)) {
+        $('.error2').hide();
+        $('.telefono-valido').show();
+        return false;
+    }
+
+    $('.error2').hide();
+    $('.telefono-valido').hide();
+    return true;
 }
 
 function validarMotivo() {
@@ -207,8 +209,10 @@ function validarMotivo() {
 
     if (opcion != '0') {
         $('.error3').hide();
+        return true;
     } else {
         $('.error3').show();
+        return false;
     }
 }
 
@@ -217,9 +221,10 @@ function validarMsj() {
 
     if (msg.length < 20) {
         $('.error4').show();
-        return;
+        return false;
     } else {
         $('.error4').hide();
+        return true;
     }
 }
 
@@ -237,9 +242,11 @@ function validarNombre2() {
     if (nombre.length < 3 && nombre.length > 0) {
         $('.error').hide();
         $('.error5').show();
+        return false;
 
     } else {
         $('.error5').hide();
+        return true;
     }
 }
 
@@ -249,16 +256,16 @@ function validarCorreo2() {
     if (correo.length < 1) {
         $('.error1').show();
         $('.email-valido').hide();
-        return;
     } else {
         $('.error1').hide();
     }
 
     if (!emailValido(correo) && (correo.length > 0)) {
         $('.email-valido').show();
-        return;
+        return false;
     } else {
         $('.email-valido').hide();
+        return true;
     }
 }
 
@@ -267,20 +274,18 @@ function validarTelefono2() {
     if (telefono.length == 0) {
         $('.error2').show();
         $('.telefono-valido').hide();
-        return;
+        return false;
     }
-    if (telefono.length > 0 && telefono.length < 11) {
+
+    if (!/^56 ?9 ?[1-9][0-9]{3} ?[0-9]{4}$/.test(telefono)) {
         $('.error2').hide();
         $('.telefono-valido').show();
+        return false;
     }
-    if (telefono.length == 11) {
-        $('.error2').hide();
-        $('.telefono-valido').hide();
-    }
-    if (telefono.length > 11) {
-        $('.error2').hide();
-        $('.telefono-valido').show();
-    }
+
+    $('.error2').hide();
+    $('.telefono-valido').hide();
+    return true;
 
 }
 
@@ -290,9 +295,10 @@ function validarMsj2() {
 
     if (msg.length < 20) {
         $('.error4').show();
-        return;
+        return false;
     } else {
         $('.error4').hide();
+        return true;
     }
 }
 
