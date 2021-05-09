@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geek Nation</title>
+    <title>Gracias por registrarte!</title>
     <link rel="icon" href="./img/logo-head.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -320,195 +320,13 @@
         </section>
     </div>
 
-    <!--   FORMULARIO   -->
-
-    <div class="container d-none d-lg-block">
-        <section class="form-completo">
-            <div class="row">
-                <div class="col-6">
-                    <img class="img-form" src="img-formulario/klipartz.com.png" alt="sonic">
-                </div>
-                <div class="col-6 formulario">
-                    <form id="formulario-contacto" action="https://formsubmit.co/ayudapgeek@gmail.com" class="form" method="POST">
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_next" value="https://jbaradit.github.io/productosgeek/contacto-exitoso.html">
-                        <input type="hidden" name="_template" value="table">
-                        <input type="hidden" name="_subject" value="Nueva Solicitud de Contacto">
-                        <div class="form-titulo">
-                            <span>Contáctanos</span>
-                        </div>
-                        <div class="form-group">
-                            <div class="form-control">
-                                <i class="fas fa-user iconos-formulario"></i>
-                                <input type="text" class="estilo1" placeholder="Ingrese su nombre" id="usuario" name="nombre">
-                                <span class="error">El campo nombre debe ser rellenado</span>
-                                <span class="error5">El nombre debe tener mínimo 3 carácteres</span>
-                            </div>
-                            <div class="form-control">
-                                <i class="fas fa-envelope iconos-formulario"></i>
-                                <input type="text" class="estilo1" placeholder="Ingrese su correo " id="correo" name="correo">
-                                <span class="error1 ">El campo de email debe ser rellenado</span>
-                                <span class="email-valido">El formato de email debe ser xxxx@dominio.com</span>
-                            </div>
-                            <div class="form-control">
-                                <i class="fas fa-phone iconos-formulario"></i>
-                                <input type="text" class="estilo1" placeholder="Ingrese su teléfono" id="telefono" name="telefono">
-                                <span class="error2">El campo de teléfono debe ser rellenado</span>
-                                <span class="telefono-valido">El campo télefono debe tener el formato
-                                    569xxxxxxxx</span>
-                            </div>
-                            <div class="form-control">
-                                <select id="motivo" class="estilo3" name="motivo">
-                                    <option value="0">--Seleccione motivo de contacto--</option>
-                                    <option value="1">Devoluciones</option>
-                                    <option value="2">Servicio al cliente</option>
-                                    <option value="3">Consultas</option>
-                                </select>
-                                <span class="error3">Debe elegir motivo de contacto</span>
-                            </div>
-                            <div class="form-control">
-                                <label class="comentary-form" for="msg">Comentarios</label>
-                                <textarea class="estilo3" name="mensaje" id="msg" cols="48" rows="4"></textarea>
-                                <span class="error4">El comentario debe tener al menos 20 carácteres</span>
-                            </div>
-                            <button type="submit" class="form-control btn btn-primary estilo2">Enviar</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-
-        </section>
-    </div>
-    <div class="container d-lg-none">
-        <section class="form-completo2">
-            <img class="img2-form" src="img-formulario/klipartz.com.png" alt="sonic">
-            <div class="formulario2 ">
-                <form id="formulario-contacto2" action="https://formsubmit.co/ayudapgeek@gmail.com" class="form" method="POST">
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_next" value="https://jbaradit.github.io/productosgeek/contacto-exitoso.html">
-                    <input type="hidden" name="_template" value="table">
-                    <input type="hidden" name="_subject" value="Nueva Solicitud de Contacto">
-                    <div class="form-titulo">
-                        <span>Contáctanos</span>
-                    </div>
-                    <div class="form-group">
-                        <div class="form-control">
-                            <i class="fas fa-user iconos-formulario"></i>
-                            <input type="text" class="estilo1" placeholder="Ingrese su nombre" id="usuario1" name="nombre">
-                            <span class="error">El campo nombre debe ser rellenado</span>
-                            <span class="error5">El nombre debe tener mínimo 3 carácteres</span>
-                        </div>
-                        <div class="form-control">
-                            <i class="fas fa-envelope iconos-formulario"></i>
-                            <input type="text" class="estilo1" placeholder="Ingrese su correo" id="correo1" name="correo">
-                            <span class="error1">El campo de email debe ser rellenado</span>
-                            <span class="email-valido">El formato de email debe ser xxxx@dominio.com</span>
-                        </div>
-                        <div class="form-control">
-                            <i class="fas fa-phone iconos-formulario"></i>
-                            <input type="text" class="estilo1" placeholder="Ingrese su teléfono " id="telefono1" name="telefono">
-                            <span class="error2">El campo de teléfono debe ser rellenado</span>
-                            <span class="telefono-valido">El campo télefono debe tener el formato 569xxxxxxxx</span>
-                        </div>
-                        <div class="form-control">
-                            <select id="motivo1" class="estilo3" name="motivo">
-                                <option value="0">--Seleccione motivo de contacto--</option>
-                                <option value="1">Devoluciones</option>
-                                <option value="2">Servicio al cliente</option>
-                                <option value="3">Consultas</option>
-                            </select>
-                            <span class="error3">Debe elegir motivo de contacto</span>
-                        </div>
-                        <div class="form-control">
-                            <label class="comentary-form" for="msg">Comentarios</label>
-                            <textarea class="estilo3" name="mensaje" id="msg1" cols="48" rows="4"></textarea>
-                            <span class="error4">El comentario debe tener al menos 20 carácteres</span>
-                        </div>
-                        <button type="submit" class="form-control btn btn-primary estilo2">Enviar</button>
-                    </div>
-                </form>
-            </div>
-        </section>
-    </div>
-
-
-    <!-- API -->
     <div class="container">
-        <section class="datos-contacto">
-
-            <div class="datos-contacto__left">
-                <div class="map" id="map"></div>
-            </div>
-            <div class="datos-contacto__right">
-                <div class="row d-flex flex-column datos-contacto__cols">
-                    <div class="col">
-                        <div class="datos-contacto__right--top d-flex">
-                            <div class="datos-contacto__logo">
-                                <i class="fas fa-location-arrow"></i>
-                            </div>
-                            <div class="datos-contacto__title d-flex align-items-center">
-                                <span>Ubicación</span>
-                            </div>
-                        </div>
-                        <div class="datos-contacto__right--btm d-flex">
-                            <span> Av. Valparaíso 240, Villa Alemana, Valparaíso.</span>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="datos-contacto__right--top d-flex">
-                            <div class="datos-contacto__logo">
-                                <i class="fas fa-phone-alt"></i>
-                            </div>
-                            <div class="datos-contacto__title d-flex align-items-center">
-                                <span>Telefono</span>
-                            </div>
-                        </div>
-                        <div class="datos-contacto__right--btm d-flex">
-                            <span>Disponible de lunes a viernes de 08:30 a 18:00 hrs.</span>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="datos-contacto__right--top d-flex">
-                            <div class="datos-contacto__logo">
-                                <i class="far fa-envelope"></i>
-                            </div>
-                            <div class="datos-contacto__title d-flex align-items-center">
-                                <span>Correo</span>
-                            </div>
-                        </div>
-                        <div class="datos-contacto__right--btm d-flex">
-                            <span>ayuda@geeknation.cl<br>cliente@geeknation.cl</span>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="datos-contacto__right--top d-flex">
-                            <div class="datos-contacto__logo">
-                                <i class="fas fa-bullhorn"></i>
-                            </div>
-                            <div class="datos-contacto__title d-flex align-items-center">
-                                <span>Siguenos</span>
-                            </div>
-                        </div>
-                        <div class="datos-contacto__right--btm d-flex">
-                            <a class="btn btn-outline-light btn-floating m-1" href="https://accounts.google.com/ServiceLogin/signinchooser?hl=es&passive=true&continue=https%3A%2F%2Fwww.google.cl%2F&ec=GAZAmgQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin" role="button"><i class="fab fa-google"></i></a>
-                            <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/" role="button"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/login" role="button"><i class="fab fa-twitter"></i></a>
-                            <p>&nbsp;</p>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-
-            <div class="datos-contacto-img">
-
-            </div>
-
-
+        <section class="registro-exitoso">
+            <i class="fas fa-check-circle"></i>
+            <h1>Gracias por contactarnos!</h1>
+            <p>Dentro de 48 horas uno de nuestros agentes se contactarán contigo.</p>
         </section>
     </div>
-
 
 
     <!-- FOOTER -->
@@ -608,13 +426,8 @@
 
     <a href="#start-page" class="go-up-button"><span class="material-icons">arrow_upward</span></a>
 
-
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src=" https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
-    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
-    <script src="script/jquery.js"></script>
-
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQrccyig7-YSposTC85SQLA7IXjr0gxwg&callback=iniciarMapa"></script>
+    <script src=" https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js " integrity=" sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG " crossorigin=" anonymous "></script>
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js " integrity=" sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc " crossorigin=" anonymous "></script>
 </body>
 
 </html>
