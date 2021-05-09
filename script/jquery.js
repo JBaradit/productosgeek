@@ -408,3 +408,9 @@ function iniciarMapa() {
         map: map
     })
 }
+
+
+$.getJSON('https://animechan.vercel.app/api/random', function(data) {
+    var animeData = data;
+    $("#quote").html(animeData.character + ': ' + '"' + animeData.quote + '"');
+});
