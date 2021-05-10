@@ -61,12 +61,15 @@ function validarContrasena() {
     let contrasena = $('#password').val().trim()
     let contrasena2 = $('#password2').val().trim()
 
-    if (contrasena != contrasena2 && contrasena2.length != 0) {
-        $('.password2-error').hide();
+    if (contrasena2.length != 0 & contrasena.length != 0 & contrasena != contrasena2) {
+        $('.password-format').show();
         $('.password-match-error').show();
+        $('#password-error-icon').show();
         $('#password2-error-icon').show();
+        $('#password-success-icon').hide();
         $('#password2-success-icon').hide();
-        $('#password2').css('border', 'solid 3px #e74c3c');
+        $(this).css('border', 'solid 3px #e74c3c');
+        $('#contrasena2').css('border', 'solid 3px #e74c3c');
         return false;
     }
     if (contrasena.length == 0) {
