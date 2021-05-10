@@ -874,6 +874,11 @@ ul {
     font-weight: 500;
 }
 
+.formulario-registro a {
+    color: var(--primary-color);
+    text-decoration-color: var(--primary-color);
+}
+
 .username-error,
 .username-length-error,
 .email-error,
