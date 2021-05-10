@@ -23,25 +23,25 @@
                     </div>
                 </div>
                 <div class="lado-medio d-flex flex-grow-1 justify-content-end">
-                    <div><a href="contacto.html"><span class=" material-icons">help</span>
-                            <span class="material-icons-text">Contacto</span></a>
+                    <div>
+                        <a href="contacto.html"><span class="material-icons">help</span>
+                            <span class="material-icons-text top-header-contact">Contacto</span></a>
                     </div>
-                    <div><a href="tel:+56213372700"><span class=" material-icons">call</span>
-                            <span class="material-icons-text">+562 1337 2700</span></a>
+                    <div>
+                        <a href="tel:+56213372700"><span class=" material-icons">call</span>
+                            <span class="material-icons-text top-header-contact">+562 1337 2700</span></a>
                     </div>
                 </div>
                 <div class="lado-der d-flex flex-grow-2 justify-content-end">
 
                     <div class="">
-                        <a href="https://www.facebook.com" class="fa fa-facebook"></a>
-                        <a href="https://www.instagram.com" class="fa fa-instagram"></a>
-                        <a href="#" class="fa fa-whatsapp"></a>
-                        <a href="https://discord.gg/XzR7fRqgqE" class="fab fa-discord"></a>
+                        <a href="https://www.facebook.com" class="fa fa-facebook top-header-redes"></a>
+                        <a href="https://www.instagram.com" class="fa fa-instagram top-header-redes"></a>
+                        <a href="#" class="fa fa-whatsapp top-header-redes"></a>
+                        <a href="https://discord.gg/XzR7fRqgqE" class="fab fa-discord top-header-redes"></a>
 
                     </div>
                 </div>
-
-
             </div>
 
         </section>
@@ -69,41 +69,47 @@
                     <!-- Colocar usuario en version movil -->
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-                        <ul class="navbar-nav w-100 mb-2 mb-lg-0">
+                        <div class="navbar-nav w-100 mb-2 mb-lg-0">
                             <div class="main-menu-web w-100 d-flex align-items-center">
-                                <li class="nav-item d-none d-lg-block busqueda-web">
-                                    <form class="d-flex input-group w-auto d-lg">
-                                        <input type="search" class="form-control" placeholder="Busqueda..." aria-label="Search" />
-                                        <button class="btn btn-outline-primary" type="button" data-mdb-ripple-color="dark">
+                                <ul class="nav-item d-none d-lg-block busqueda-web">
+                                    <li class="nav-item d-none d-lg-block busqueda-web">
+                                        <form class="d-flex input-group w-auto d-lg">
+                                            <input type="search" class="form-control" placeholder="Busqueda..." aria-label="Search" />
+                                            <button class="btn btn-outline-primary" type="button" data-mdb-ripple-color="dark">
                                             <span class="material-icons search-icon">search
                                             </span>
                                         </button>
-                                    </form>
-                                </li>
-
+                                        </form>
+                                    </li>
+                                </ul>
                                 <div class="botones-end-menu d-flex align-items-center">
-                                    <li class="nav-item d-none d-lg-block ">
-                                        <a class="nav-link" href="https://www.starken.cl/seguimiento"><span
+                                    <ul>
+                                        <li class="nav-item d-none d-lg-block">
+                                            <a class="nav-link" href="https://www.starken.cl/seguimiento"><span
                                                 class="material-icons">local_shipping</span><span
-                                                class="material-icons-text">Seguimiento</a>
-                                    </li>
-                                    <li class="nav-item dropdown d-flex borde-izquierdo-menu  d-none d-lg-block">
-                                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            <span class="material-icons">person</span> <span class="material-icons-text">Mi
+                                                class="material-icons-text">Seguimiento</span></a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li class="nav-item dropdown d-flex borde-izquierdo-menu  d-none d-lg-block">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <span class="material-icons">person</span> <span class="material-icons-text">Mi
                                                 cuenta</span>
-                                        </a>
-                                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                                            <li><a class="dropdown-item" href="iniciarsesion.html">Iniciar Sesión</a></li>
-                                            <li><a class="dropdown-item" href="registrousuario.html">Registrate</a></li>
-                                        </ul>
-                                    </li>
+                                            </a>
 
-                                    <li class="nav-item borde-izquierdo-menu  d-none d-lg-block">
-                                        <a class="nav-link" href="#"><span
+                                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                                <li><a class="dropdown-item" href="#">Iniciar Sesión</a></li>
+                                                <li><a class="dropdown-item" href="registrousuario.html">Registrate</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li class="nav-item borde-izquierdo-menu  d-none d-lg-block">
+                                            <a class="nav-link" href="#"><span
                                                 class="material-icons">shopping_cart</span><span
-                                                class="material-icons-text">Carrito</a>
-                                    </li>
+                                                class="material-icons-text">Carrito</span></a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
 
@@ -111,114 +117,118 @@
                             <div class="top-menu-movil d-flex justify-content-between d-lg-none">
                                 <a class="nav-link d-lg-none" href="https://www.starken.cl/seguimiento"><span
                                         class="material-icons">local_shipping</span><span
-                                        class="material-icons-text">Seguimiento</a>
-
-                                <li class="nav-item d-lg-none">
-                                    <a class="nav-link" href="#"><span class="material-icons">person</span><span
-                                            class="material-icons-text">Mi cuenta</a>
-                                </li>
-                                <li class="nav-item d-lg-none">
-                                    <a class="nav-link" href="#"><span class="material-icons">shopping_cart</span><span
-                                            class="material-icons-text">Carrito</a>
-                                </li>
+                                        class="material-icons-text">Seguimiento</span></a>
+                                <ul>
+                                    <li class="nav-item d-lg-none">
+                                        <a class="nav-link" href="#"><span class="material-icons">person</span><span
+                                            class="material-icons-text">Mi cuenta</span></a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li class="nav-item d-lg-none">
+                                        <a class="nav-link" href="#"><span class="material-icons">shopping_cart</span><span
+                                            class="material-icons-text">Carrito</span></a>
+                                    </li>
+                                </ul>
                             </div>
-
-
-                            <li class="nav-item d-lg-none busqueda-movil">
-                                <form class="d-flex input-group w-auto d-lg">
-                                    <input type="search" class="form-control" placeholder="Busqueda..." aria-label="Search" />
-                                    <button class="btn btn-outline-primary" type="button" data-mdb-ripple-color="dark">
+                            <ul class="nav-item d-lg-none busqueda-movil">
+                                <li class="nav-item d-lg-none">
+                                    <form class="d-flex input-group w-auto d-lg">
+                                        <input type="search" class="form-control" placeholder="Busqueda..." aria-label="Search" />
+                                        <button class="btn btn-outline-primary" type="button" data-mdb-ripple-color="dark">
                                         <span class="material-icons search-icon">search
                                         </span>
                                     </button>
-                                </form>
-                            </li>
+                                    </form>
+                                </li>
+                            </ul>
                             <p class="d-lg-none titulo-categorias">Categorias</p>
                             <hr class="hr-categorias d-lg-none">
                             <div class="categorias-busqueda-movil d-lg-none">
                                 <div class="busqueda-movil-izq d-lg-none">
-
-                                    <li class="nav-item dropdown d-lg-none">
-                                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <ul>
+                                        <li class="nav-item dropdown d-lg-none">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             Videojuegos
-                                        </a>
-                                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                                            <li><a class="dropdown-item" href="#">PS5</a></li>
-                                            <li><a class="dropdown-item" href="#">PS4</a></li>
-                                            <li><a class="dropdown-item" href="#">Xbox Series X/S</a></li>
-                                            <li><a class="dropdown-item" href="#">Xbox Series</a></li>
-                                            <li><a class="dropdown-item" href="#">Nintendo Switch</a></li>
-                                            <li><a class="dropdown-item" href="#">Ver todo</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item dropdown d-lg-none">
-                                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                                <li><a class="dropdown-item" href="#">PS5</a></li>
+                                                <li><a class="dropdown-item" href="#">PS4</a></li>
+                                                <li><a class="dropdown-item" href="#">Xbox Series X/S</a></li>
+                                                <li><a class="dropdown-item" href="#">Xbox Series</a></li>
+                                                <li><a class="dropdown-item" href="#">Nintendo Switch</a></li>
+                                                <li><a class="dropdown-item" href="#">Ver todo</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item dropdown d-lg-none">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             Comic/Manga
                                         </a>
-                                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                                            <li><a class="dropdown-item" href="#">Marvel</a></li>
-                                            <li><a class="dropdown-item" href="#">DC</a></li>
-                                            <li><a class="dropdown-item" href="#">Occidental</a></li>
-                                            <li><a class="dropdown-item" href="#">Manga</a></li>
-                                            <li><a class="dropdown-item" href="#">Manhwa</a></li>
-                                            <li><a class="dropdown-item" href="#">Revistas</a></li>
-                                            <li><a class="dropdown-item" href="#">Ver todo</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item dropdown d-lg-none">
-                                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                                <li><a class="dropdown-item" href="#">Marvel</a></li>
+                                                <li><a class="dropdown-item" href="#">DC</a></li>
+                                                <li><a class="dropdown-item" href="#">Occidental</a></li>
+                                                <li><a class="dropdown-item" href="#">Manga</a></li>
+                                                <li><a class="dropdown-item" href="#">Manhwa</a></li>
+                                                <li><a class="dropdown-item" href="#">Revistas</a></li>
+                                                <li><a class="dropdown-item" href="#">Ver todo</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item dropdown d-lg-none">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             Coleccionables
                                         </a>
-                                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                                            <li><a class="dropdown-item" href="#">TCG</a></li>
-                                            <li><a class="dropdown-item" href="#">Lego</a></li>
-                                            <li><a class="dropdown-item" href="#">Estatuas</a></li>
-                                            <li><a class="dropdown-item" href="#">Pop</a></li>
-                                            <li><a class="dropdown-item" href="#">Amiibos</a></li>
-                                            <li><a class="dropdown-item" href="#">Peluches</a></li>
-                                            <li><a class="dropdown-item" href="#">Nendoroid</a></li>
-                                            <li><a class="dropdown-item" href="#">Ver todo</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item dropdown d-lg-none">
-                                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                                <li><a class="dropdown-item" href="#">TCG</a></li>
+                                                <li><a class="dropdown-item" href="#">Lego</a></li>
+                                                <li><a class="dropdown-item" href="#">Estatuas</a></li>
+                                                <li><a class="dropdown-item" href="#">Pop</a></li>
+                                                <li><a class="dropdown-item" href="#">Amiibos</a></li>
+                                                <li><a class="dropdown-item" href="#">Peluches</a></li>
+                                                <li><a class="dropdown-item" href="#">Nendoroid</a></li>
+                                                <li><a class="dropdown-item" href="#">Ver todo</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item dropdown d-lg-none">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             Accesorios
                                         </a>
-                                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                                            <li><a class="dropdown-item" href="#">Ropa</a></li>
-                                            <li><a class="dropdown-item" href="#">Billeteras</a></li>
-                                            <li><a class="dropdown-item" href="#">Llaveros</a></li>
-                                            <li><a class="dropdown-item" href="#">AROS</a></li>
-                                            <li><a class="dropdown-item" href="#">Anillos</a></li>
-                                            <li><a class="dropdown-item" href="#">Mochilas</a></li>
-                                            <li><a class="dropdown-item" href="#">Cosplay</a></li>
-                                            <li><a class="dropdown-item" href="#">Ver todo</a></li>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                                <li><a class="dropdown-item" href="#">Ropa</a></li>
+                                                <li><a class="dropdown-item" href="#">Billeteras</a></li>
+                                                <li><a class="dropdown-item" href="#">Llaveros</a></li>
+                                                <li><a class="dropdown-item" href="#">AROS</a></li>
+                                                <li><a class="dropdown-item" href="#">Anillos</a></li>
+                                                <li><a class="dropdown-item" href="#">Mochilas</a></li>
+                                                <li><a class="dropdown-item" href="#">Cosplay</a></li>
+                                                <li><a class="dropdown-item" href="#">Ver todo</a></li>
 
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item dropdown d-lg-none">
-                                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item dropdown d-lg-none">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             Blu-Ray
                                         </a>
-                                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                                            <li><a class="dropdown-item" href="#">Peliculas</a></li>
-                                            <li><a class="dropdown-item" href="#">Dramas</a></li>
-                                            <li><a class="dropdown-item" href="#">Series</a></li>
-                                            <li><a class="dropdown-item" href="#">Anime</a></li>
-                                            <li><a class="dropdown-item" href="#">Ver todo</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item dropdown d-lg-none">
-                                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                                <li><a class="dropdown-item" href="#">Peliculas</a></li>
+                                                <li><a class="dropdown-item" href="#">Dramas</a></li>
+                                                <li><a class="dropdown-item" href="#">Series</a></li>
+                                                <li><a class="dropdown-item" href="#">Anime</a></li>
+                                                <li><a class="dropdown-item" href="#">Ver todo</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item dropdown d-lg-none">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             Cd's Musicales
                                         </a>
-                                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                                            <li><a class="dropdown-item" href="#">K-Pop</a></li>
-                                            <li><a class="dropdown-item" href="#">Japón</a></li>
-                                            <li><a class="dropdown-item" href="#">Soundtracks</a></li>
-                                            <li><a class="dropdown-item" href="#">Ver todo</a></li>
-                                        </ul>
-                                    </li>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                                <li><a class="dropdown-item" href="#">K-Pop</a></li>
+                                                <li><a class="dropdown-item" href="#">Japón</a></li>
+                                                <li><a class="dropdown-item" href="#">Soundtracks</a></li>
+                                                <li><a class="dropdown-item" href="#">Ver todo</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
                                 </div>
                                 <div class="busqueda-movil-der d-lg-none"><img src="./img-test/img-chicas/megaman.png" alt="">
                                 </div>
@@ -228,13 +238,12 @@
 
                             <p class="d-lg-none titulo-categorias">Servicio al cliente</p>
                             <hr class="hr-categorias d-lg-none">
-                            <li class="nav-item d-lg-none">
-                                <a class="nav-link" href="contacto.html">Contacto</a>
-                            </li>
-
-
-                        </ul>
-
+                            <ul class="nav-item d-lg-none">
+                                <li class="nav-item d-lg-none">
+                                    <a class="nav-link" href="contacto.html">Contacto</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </nav>
